@@ -144,8 +144,8 @@ Six skills, all content-only. Changes from the toolkit versions:
   hash() correctness so the cache works. Routes to devguide_map anchors for
   depth instead of duplicating Foundry prose.
 - **nuke-tool-structure** — absorbs the useful half of nuke-tdd as guidance:
-  pure core / thin shell, test the core headless, verify against the oracle
-  (compiler / `nuke -t`) before claiming done.
+  pure core / thin shell, test the core headless, and the **verification
+  ladder** (below) before claiming done.
 - **nuke-python-model / nuke-ndk-model / nuke-blink-model** — port with path
   updates and a pointer to their `references/` field guide, framed with the
   verify-before-use rule: the guide tells you *where to look*, the official
@@ -174,6 +174,27 @@ areas:
 Every example states its verification route in a header comment (compiled
 against which Nuke, or visually verified, per the old repo's convention).
 
+## Verification ladder
+
+Codified in `nuke-tool-structure` and summarized in the README ("Testing your
+tools"). The agent climbs as high as the environment allows and reports which
+rung it reached:
+
+1. **Static** (always available): symbol grep against `refs/`; no invented API.
+2. **Headless** (Nuke installed): `nuke -t` — import the module, build the
+   node, compile the Blink kernel, catch errors without the GUI. NDK: compile.
+   Note license caveat: terminal mode consumes a license seat.
+3. **Live session** (optional, recommended): a community **Nuke MCP server**
+   (e.g. dughogan/nuke_mcp, kleer001/nuke-mcp) connected to a running Nuke —
+   create the node, exec test snippets, render a frame, read real errors.
+   The README recommends this for the best feedback loop, with an explicit
+   trust note: these are third-party servers that execute arbitrary Python in
+   your Nuke session; vet before installing. We never bundle, depend on, or
+   auto-configure one; absence degrades gracefully to rungs 1–2.
+4. **Human** (fallback, always the final rung): the agent hands the user a
+   short manual test checklist (load path, knobs to touch, expected result,
+   edge cases) instead of claiming the tool works.
+
 ## Licensing posture
 
 Ship facts, never Foundry prose: symbol names, signatures, header/line
@@ -200,6 +221,10 @@ maintainer-run — not CI-blocking).
    submitter-shaped tool.
 5. **Evals (optional, later)** — port harness; re-run ablation to confirm the
    leaner design still holds the 2.1× result; numbers feed the README.
+   The ported harness **captures per-run cost and token usage** (headless
+   `--output-format json` exposes `total_cost_usd` and token counts; the old
+   harness discarded them), so the context-overhead question is answered with
+   a measured column next to compile rate, not an estimate.
 
 ## Open decisions
 
