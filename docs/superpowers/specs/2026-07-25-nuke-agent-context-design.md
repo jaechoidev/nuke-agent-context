@@ -64,6 +64,10 @@ nuke-agent-context/
     examples/
       python/  blink/ (incl. bookofshaders/)  ndk/
       INDEX.md                   one line per example: concept + APIs exercised
+    docs/
+      git-github-setup.md        install git + gh, GitHub account, auth, first push
+                                 (shipped in the plugin so the agent can walk a
+                                 TA through it interactively; linked from README)
   tools/                         maintainer-only; not part of the plugin
     nuke_detect.py
     extract_python_api.py  extract_ndk_index.py  extract_blink_api.py
@@ -145,7 +149,14 @@ Six skills, all content-only. Changes from the toolkit versions:
   depth instead of duplicating Foundry prose.
 - **nuke-tool-structure** — absorbs the useful half of nuke-tdd as guidance:
   pure core / thin shell, test the core headless, and the **verification
-  ladder** (below) before claiming done.
+  ladder** (below) before claiming done. Also carries **version-control
+  discipline**: at the start of tool work, check for a git repo; if absent,
+  recommend `git init` (once, with a one-line why — tools are software,
+  history is undo) and proceed respecting the user's answer. During
+  development, commit at verified milestones — each time a verification rung
+  passes, not on a timer — with short conventional messages. If git or `gh`
+  is missing on the machine, route the user to the shipped setup guide
+  (below) rather than improvising install instructions.
 - **nuke-python-model / nuke-ndk-model / nuke-blink-model** — port with path
   updates and a pointer to their `references/` field guide, framed with the
   verify-before-use rule: the guide tells you *where to look*, the official
@@ -173,6 +184,25 @@ areas:
 
 Every example states its verification route in a header comment (compiled
 against which Nuke, or visually verified, per the old repo's convention).
+
+## Version control & deployability
+
+Target users are technical artists who may not have git set up. The design
+treats "your tool is deployable" as part of SE quality:
+
+- **Guidance, never enforcement.** No hooks; the agent (via
+  `nuke-tool-structure`) recommends `git init` when a tool project has no
+  repo, and checkpoints work with a commit each time a verification rung
+  passes. The user can decline once and the agent stops asking.
+- **`docs/git-github-setup.md`** ships inside the plugin: installing git
+  (macOS: Xcode CLT/Homebrew; Windows: winget/Git for Windows; Linux: distro
+  package), installing the `gh` CLI, creating a GitHub account, `gh auth
+  login`, and the first `git init → commit → gh repo create → push` cycle.
+  Because it's in the plugin directory, the agent can read it and walk the
+  user through setup interactively instead of guessing at instructions.
+- **README** gets a "Deploying your tools" section linking the same doc, plus
+  the per-project plugin install guidance (interactive scope picker in
+  `/plugin install`, `claude plugin install --scope project|local` in the CLI).
 
 ## Verification ladder
 
