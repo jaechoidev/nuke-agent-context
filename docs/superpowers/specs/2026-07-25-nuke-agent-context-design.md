@@ -52,7 +52,7 @@ nuke-agent-context/
         devguide_index.md / devguide_map.tsv      (54-page NDK guide map, concept anchors)
         pyguide_index.md / pyguide_map.tsv
         blinkguide_index.md / blinkguide_map.tsv
-    references/                  community field guides (unofficial trust tier)
+    references/                  community field guides (reference-only tier: verify before use)
       README.md  ndk.md  blink.md  python.md  pyside-panels.md  tool-architecture.md
     skills/
       nuke-api-lookup/           the core rule + three-tier lookup (below)
@@ -84,8 +84,16 @@ Two trust tiers, explicit everywhere:
 
 - **`refs/` — official, version-pinned.** Symbol exists ⟺ it's in the index
   for your Nuke version. Signatures and doc URLs included.
-- **`references/` — community, unversioned.** Practitioner orientation with
-  cited sources. When it conflicts with refs/headers, official wins.
+- **`references/` — community, unversioned, reference-only.** Practitioner
+  orientation with cited sources. **Never a basis for writing code directly:
+  any claim from this tier that is about to influence code must first be
+  verified against the official tier** — the refs index, the versioned Foundry
+  page, the real header, or a compile/`nuke -t` check — because community
+  knowledge is frequently legacy (PySide2-era patterns, version-specific build
+  flags, workarounds Foundry has since fixed). Verified-then-used, never
+  believed. When it conflicts with refs/headers, official wins; when it can't
+  be verified, it is presented to the user as unverified community practice,
+  not applied silently.
 
 The `nuke-api-lookup` skill's three-tier rule for a symbol's exact signature:
 
@@ -139,7 +147,14 @@ Six skills, all content-only. Changes from the toolkit versions:
   pure core / thin shell, test the core headless, verify against the oracle
   (compiler / `nuke -t`) before claiming done.
 - **nuke-python-model / nuke-ndk-model / nuke-blink-model** — port with path
-  updates and a pointer to their `references/` field guide.
+  updates and a pointer to their `references/` field guide, framed with the
+  verify-before-use rule: the guide tells you *where to look*, the official
+  tier tells you *what is true*.
+
+Port note: `references/README.md` gets the same hardening — its "different
+trust tier" section becomes an explicit instruction that every claim must be
+verified against the official tier before it influences code, with unverifiable
+claims surfaced to the user as such.
 
 Dropped skills: `nuke-setup` (no setup), `nuke-tdd` (absorbed).
 
