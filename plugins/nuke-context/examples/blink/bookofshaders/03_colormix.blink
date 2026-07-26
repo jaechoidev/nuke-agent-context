@@ -1,0 +1,19 @@
+// 03_colormix — nuke-agent example (original code).
+// category: bookofshaders/colors | teaches: lerp between two colours across st.x
+// port of the technique in The Book of Shaders ch.06 (original Blink; not their code)
+// verified: live-rendered in Nuke 17.0v3
+kernel BoSColorMix : public ImageComputationKernel<ePixelWise>
+{
+  Image<eRead, eAccessPoint> src;
+  Image<eWrite, eAccessPoint> dst;
+local:
+  float2 res;
+  void init() { res = float2(float(dst.bounds.width()), float(dst.bounds.height())); }
+  void process(int2 pos) {
+    float2 st = float2(float(pos.x), float(pos.y)) / res;
+    float3 a = float3(0.149f, 0.141f, 0.912f);
+    float3 b = float3(1.0f, 0.833f, 0.224f);
+    float3 c = lerp(a, b, st.x);
+    dst() = float4(c.x, c.y, c.z, 1.0f);
+  }
+};

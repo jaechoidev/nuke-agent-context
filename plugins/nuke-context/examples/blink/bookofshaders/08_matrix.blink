@@ -1,0 +1,29 @@
+// 08_matrix — nuke-agent example (original code).
+// category: bookofshaders/matrices | teaches: rotating the coordinate space (2D rotation)
+// port of the technique in The Book of Shaders ch.08 (original Blink; not their code).
+// verified: live-rendered in Nuke 17.0v3
+kernel BoSMatrix : public ImageComputationKernel<ePixelWise>
+{
+  Image<eRead, eAccessPoint> src;
+  Image<eWrite, eAccessPoint> dst;
+local:
+  float2 res;
+
+  float2 rotate(float2 st, float a) {
+    st = st - float2(0.5f, 0.5f);                    // pivot about centre
+    float c = cos(a), s = sin(a);
+    float2 r = float2(c * st.x - s * st.y, s * st.x + c * st.y);
+    return r + float2(0.5f, 0.5f);
+  }
+
+  void init() { res = float2(float(dst.bounds.width()), float(dst.bounds.height())); }
+
+  void process(int2 pos) {
+    float2 st = float2(float(pos.x), float(pos.y)) / res;
+    st = rotate(st, 0.7854f);                         // 45 degrees
+    // filled square, half-width 0.2, in the rotated space
+    float2 b = float2(fabs(st.x - 0.5f), fabs(st.y - 0.5f));
+    float inside = (b.x < 0.2f && b.y < 0.2f) ? 1.0f : 0.0f;
+    dst() = float4(inside, inside, inside, 1.0f);
+  }
+};

@@ -1,0 +1,47 @@
+// 13_fbm — nuke-agent example (original code).
+// category: bookofshaders/generative | teaches: fractal brownian motion (summed octaves)
+// port of the technique in The Book of Shaders ch.13 (original Blink; not their code).
+// verified: live-rendered in Nuke 17.0v3
+kernel BoSFbm : public ImageComputationKernel<ePixelWise>
+{
+  Image<eRead, eAccessPoint> src;
+  Image<eWrite, eAccessPoint> dst;
+local:
+  float2 res;
+
+  float fract(float x) { return x - floor(x); }
+
+  float rand(float2 st) {
+    return fract(sin(dot(st, float2(12.9898f, 78.233f))) * 43758.5453f);
+  }
+
+  float noise(float2 st) {
+    float2 i = floor(st);
+    float2 f = st - i;
+    float a = rand(i);
+    float b = rand(i + float2(1.0f, 0.0f));
+    float c = rand(i + float2(0.0f, 1.0f));
+    float d = rand(i + float2(1.0f, 1.0f));
+    float2 u = f * f * (float2(3.0f, 3.0f) - 2.0f * f);
+    return lerp(a, b, u.x) + (c - a) * u.y * (1.0f - u.x) + (d - b) * u.x * u.y;
+  }
+
+  float fbm(float2 st) {
+    float value = 0.0f;
+    float amp = 0.5f;
+    for (int i = 0; i < 5; ++i) {     // 5 octaves
+      value += amp * noise(st);
+      st = st * 2.0f;                 // double the frequency
+      amp = amp * 0.5f;              // halve the amplitude
+    }
+    return value;
+  }
+
+  void init() { res = float2(float(dst.bounds.width()), float(dst.bounds.height())); }
+
+  void process(int2 pos) {
+    float2 st = float2(float(pos.x), float(pos.y)) / res * 3.0f;
+    float v = fbm(st);
+    dst() = float4(v, v, v, 1.0f);
+  }
+};

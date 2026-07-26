@@ -1,0 +1,130 @@
+// SDFRaymarcher — nuke-agent example (original code).
+// category: raymarching | teaches: a 3D signed-distance-field renderer in Blink
+// Renders five SDF primitives (sphere, cube, cylinder, cone, torus) in one
+// scene, each sized by its own knob, with a knob-driven camera. Original code;
+// the SDF formulas are the standard ones (Inigo Quilez), reimplemented here.
+// verified: live-rendered in Nuke 17.0v3
+kernel SDFRaymarcher : public ImageComputationKernel<ePixelWise>
+{
+  Image<eRead, eAccessPoint> src;
+  Image<eWrite, eAccessPoint> dst;
+
+param:
+  float3 camPos;
+  float fov;
+  float spacing;
+  float sphereRadius;
+  float cubeSize;
+  float cylRadius;
+  float cylHeight;
+  float coneHeight;
+  float coneRadius;
+  float torusMajor;
+  float torusMinor;
+
+local:
+  float2 res;
+
+  void define() {
+    defineParam(camPos,      "Camera Position", float3(0.0f, 2.2f, -15.0f));
+    defineParam(fov,         "FOV",          1.25f);
+    defineParam(spacing,     "Spacing",      2.3f);
+    defineParam(sphereRadius,"Sphere Radius",1.0f);
+    defineParam(cubeSize,    "Cube Size",    0.85f);
+    defineParam(cylRadius,   "Cylinder Radius", 0.8f);
+    defineParam(cylHeight,   "Cylinder Height", 1.0f);
+    defineParam(coneHeight,  "Cone Height",  1.0f);
+    defineParam(coneRadius,  "Cone Radius",  0.9f);
+    defineParam(torusMajor,  "Torus Major",  0.75f);
+    defineParam(torusMinor,  "Torus Minor",  0.32f);
+  }
+
+  // --- signed distance fields ---
+  float sdSphere(float3 p, float r) { return length(p) - r; }
+
+  float sdBox(float3 p, float3 b) {
+    float3 q = fabs(p) - b;
+    return length(max(q, float3(0.0f, 0.0f, 0.0f))) + min(max(q.x, max(q.y, q.z)), 0.0f);
+  }
+
+  float sdCylinder(float3 p, float r, float h) {
+    float2 d = float2(length(float2(p.x, p.z)) - r, fabs(p.y) - h);
+    return min(max(d.x, d.y), 0.0f) + length(max(d, float2(0.0f, 0.0f)));
+  }
+
+  float sdTorus(float3 p, float R, float r) {
+    float2 q = float2(length(float2(p.x, p.z)) - R, p.y);
+    return length(q) - r;
+  }
+
+  // capped cone spanning y in [-h, h]: base radius r1 at the bottom, r2 at top.
+  // Standard Inigo Quilez formula (r2 near zero -> a pointed cone).
+  float sdCappedCone(float3 p, float h, float r1, float r2) {
+    float2 q = float2(length(float2(p.x, p.z)), p.y);
+    float2 k1 = float2(r2, h);
+    float2 k2 = float2(r2 - r1, 2.0f * h);
+    float rr = (q.y < 0.0f) ? r1 : r2;
+    float2 ca = float2(q.x - min(q.x, rr), fabs(q.y) - h);
+    float2 cb = q - k1 + k2 * clamp(dot(k1 - q, k2) / dot(k2, k2), 0.0f, 1.0f);
+    float s = (cb.x < 0.0f && ca.y < 0.0f) ? -1.0f : 1.0f;
+    return s * sqrt(min(dot(ca, ca), dot(cb, cb)));
+  }
+
+  // the whole scene: five primitives placed along X, unioned by min()
+  float map(float3 p) {
+    float s = spacing;
+    float d = sdSphere(p - float3(-2.0f * s, 0.0f, 0.0f), sphereRadius);
+    d = min(d, sdBox(p - float3(-s, 0.0f, 0.0f), float3(cubeSize, cubeSize, cubeSize)));
+    d = min(d, sdCylinder(p - float3(0.0f, 0.0f, 0.0f), cylRadius, cylHeight));
+    d = min(d, sdCappedCone(p - float3(s, 0.0f, 0.0f), coneHeight, coneRadius, 0.05f));
+    d = min(d, sdTorus(p - float3(2.0f * s, 0.0f, 0.0f), torusMajor, torusMinor));
+    return d;
+  }
+
+  float3 calcNormal(float3 p) {
+    float e = 0.0015f;
+    float3 dx = float3(e, 0.0f, 0.0f);
+    float3 dy = float3(0.0f, e, 0.0f);
+    float3 dz = float3(0.0f, 0.0f, e);
+    float3 n = float3(map(p + dx) - map(p - dx),
+                      map(p + dy) - map(p - dy),
+                      map(p + dz) - map(p - dz));
+    return normalize(n);
+  }
+
+  void init() { res = float2(float(dst.bounds.width()), float(dst.bounds.height())); }
+
+  void process(int2 pos) {
+    float2 uv = (float2(float(pos.x), float(pos.y)) - 0.5f * res) / res.y;
+
+    // knob-driven camera looking at the scene centre
+    float3 ro = camPos;
+    float3 ta = float3(0.0f, 0.0f, 0.0f);
+    float3 fwd = normalize(ta - ro);
+    float3 rgt = normalize(cross(fwd, float3(0.0f, 1.0f, 0.0f)));
+    float3 up = cross(rgt, fwd);
+    float3 rd = normalize(uv.x * rgt + uv.y * up + fov * fwd);
+
+    float t = 0.0f;
+    float hit = 0.0f;
+    for (int i = 0; i < 128; ++i) {
+      float3 p = ro + rd * t;
+      float d = map(p);
+      if (d < 0.001f) { hit = 1.0f; break; }
+      t = t + d;
+      if (t > 60.0f) break;
+    }
+
+    float3 col = float3(0.07f, 0.07f, 0.09f);
+    if (hit > 0.5f) {
+      float3 p = ro + rd * t;
+      float3 n = calcNormal(p);
+      float3 L = normalize(float3(0.6f, 0.8f, -0.5f));
+      float diff = max(dot(n, L), 0.0f);
+      float amb = 0.15f;
+      float3 base = float3(0.5f, 0.5f, 0.5f) + 0.5f * n;   // normal-tinted base colour
+      col = base * (amb + 0.9f * diff);
+    }
+    dst() = float4(col.x, col.y, col.z, 1.0f);
+  }
+};
