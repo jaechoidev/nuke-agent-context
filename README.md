@@ -1,5 +1,23 @@
 # nuke-agent-context
 
+> **⚠️ Archived — negative result.** This plugin was built on a real, measured
+> effect and then killed by a better measurement. A controlled follow-up
+> benchmark (418 graded runs, 2×2 factorial, paired statistics, live licensed
+> Nuke 17) found its effect on task success **indistinguishable from zero** on
+> current frontier models: +2.9 points overall (CI spans zero, McNemar
+> p = 0.50), at 2.5× the tokens. The one surviving signal — a +14.8-point NDK
+> compile effect — is erased by simply letting the agent compile and test its
+> own work, and did not reproduce on a Sonnet-class model at all. Current
+> models no longer meaningfully fabricate Nuke APIs (1 invented reference in
+> 418 runs), which was the failure mode this plugin existed to prevent.
+> **Full write-up: [Does grounding still pay?](https://jaechoidev.github.io/posts/2026/07/nuke-context-benchmark/)**
+>
+> The repo stays up as a record of the approach. Still potentially useful:
+> the `tools/` extractors (version-pinned API indexes from a local Nuke
+> install), the refs/verification-ladder design, and the eval methodology.
+> The plugin is unmaintained; it still installs if you want to study it, but
+> the measured advice is: give your agent a way to compile and run instead.
+
 A Claude Code plugin (`nuke-context`) that makes AI agents good at Nuke tool
 development — Python, BlinkScript, and the NDK (C++).
 
@@ -11,10 +29,11 @@ result against the strongest oracle available, and reports how far up that
 ladder it got. Nothing runs at install time — the plugin is pure content: no
 hooks, no setup step, nothing executable.
 
-Evidence this approach works: in an 8-case ablation against the NDK's hardest
-surface (deep ops, readers, temporal access), grounding lifted the compile
-rate **2.1×** (38% → 79%) and cut invented API references by **70%**. The
-harness lives in `evals/`.
+The original evidence that motivated it: in an 8-case ablation against the
+NDK's hardest surface (deep ops, readers, temporal access), grounding lifted
+the compile rate **2.1×** (38% → 79%) and cut invented API references by
+**70%** on a Sonnet-class model of the time. That harness lives in `evals/`;
+the follow-up study that overturned it is linked in the banner above.
 
 ## Install
 
