@@ -237,19 +237,24 @@ def build_index(headers_dir: pathlib.Path) -> dict[str, Symbol]:
 
 def doc_url(name: str, doc_base: str,
             doxygen_dir: pathlib.Path | None = None) -> str:
-    """Public Foundry doxygen URL for a DD::Image class, or "" if none applies.
+    """Public Foundry doxygen URL for a DD::Image entity, or "" if none applies.
 
-    Doxygen names a class page `classDD_1_1Image_1_1<Name>.html`, with `::` in a
-    nested name mangled to `_1_1` (so `Op::Description` ->
-    `...Op_1_1Description.html`). Not every indexed symbol is a DD::Image class
-    (`Tile` is not), so when a local doxygen directory is given the URL is only
-    emitted for a page that actually exists there -- a real link or none, never
+    Doxygen mangles a page name twice: every `_` in the C++ name doubles to
+    `__`, then `::` becomes `_1_1` (so `MultiArray_KnobI` ->
+    `...MultiArray__KnobI.html`, `Knob::Visibility_Fn` ->
+    `...Knob_1_1Visibility__Fn.html`). Classes get a `class` page and structs a
+    `struct` page, so both prefixes are tried. With a local doxygen dir the URL
+    is only emitted for a page that exists there -- a real link or none, never
     a guess that 404s.
     """
-    page = "classDD_1_1Image_1_1" + name.replace("::", "_1_1") + ".html"
-    if doxygen_dir is not None and not (pathlib.Path(doxygen_dir) / page).is_file():
-        return ""
-    return f"{doc_base.rstrip('/')}/{page}"
+    mangled = name.replace("_", "__").replace("::", "_1_1")
+    for form in ("class", "struct"):
+        page = f"{form}DD_1_1Image_1_1{mangled}.html"
+        if doxygen_dir is None:
+            return f"{doc_base.rstrip('/')}/{page}"
+        if (pathlib.Path(doxygen_dir) / page).is_file():
+            return f"{doc_base.rstrip('/')}/{page}"
+    return ""
 
 
 def render_symbol_map(index: dict[str, Symbol], doc_base: str | None = None,
