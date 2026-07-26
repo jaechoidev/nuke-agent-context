@@ -23,10 +23,15 @@ import pathlib
 import re
 import sys
 
-# A class/struct *definition*: optional EXPORT macro, then `{` or a base-class list.
-# Trailing `;` means forward declaration -> skipped.
+# A class/struct *definition*: optional same-line `template<...>` clause,
+# optional EXPORT macro, then `{` or a base-class list. Trailing `;` means
+# forward declaration -> skipped. Names may start lowercase (rTriangle) and a
+# template's own parameters are consumed by the clause, never captured. A
+# multi-line `template<...>` (clause on its own line) already works: the class
+# line matches on its own.
 CLASS_RE = re.compile(
-    r"^[ \t]*(?:class|struct)\s+(?:[A-Z]\w*_API\s+)?([A-Z]\w+)\s*(?::[^;]*)?(?:\{|$)")
+    r"^[ \t]*(?:template\s*<[^<>]*>\s*)?"
+    r"(?:class|struct)\s+(?:[A-Z]\w*_API\s+)?([A-Za-z]\w+)\s*(?::[^;]*)?(?:\{|$)")
 BLOCK_RE = re.compile(r"/\*[!*](.*?)\*/", re.S)      # /*! ... */ and /** ... */
 LINE_RE = re.compile(r"^[ \t]*(?://!|///)(.*)$")     # //! ... and /// ...
 DOXY_TAGS = re.compile(

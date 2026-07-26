@@ -163,9 +163,9 @@ def test_different_apis_produce_different_hash(tools_root, nuke_installs):
 def test_symbol_counts_match_reference(tools_root, nuke_installs):
     mod = load(tools_root)
     v = by_version(nuke_installs)
-    assert len(mod.build_index(v["15.2v9"])) == 445
-    assert len(mod.build_index(v["16.1v3"])) == 511
-    assert len(mod.build_index(v["17.0v3"])) == 511
+    assert len(mod.build_index(v["15.2v9"])) == 456
+    assert len(mod.build_index(v["16.1v3"])) == 523
+    assert len(mod.build_index(v["17.0v3"])) == 523
 
 
 def test_cli_writes_both_artifacts(tools_root, nuke_installs, tmp_path):
@@ -182,7 +182,7 @@ def test_cli_writes_both_artifacts(tools_root, nuke_installs, tmp_path):
     tsv = (out / "symbol_map.tsv").read_text()
     assert "| `Row` |" in md
     assert "Row\tRow.h\t" in tsv
-    assert len(tsv.strip().splitlines()) == 511 + 1        # + header row
+    assert len(tsv.strip().splitlines()) == 523 + 1        # + header row
     # Nothing may be written outside --out: these artifacts are derived from
     # Foundry headers and must never land in the repo.
     assert list(work.iterdir()) == [], f"wrote outside --out: {list(work.iterdir())}"
@@ -213,7 +213,7 @@ def test_every_recorded_line_really_declares_that_symbol(tools_root, nuke_instal
                     errors="replace").splitlines())
             assert 1 <= sym.line <= len(src), f"{label}: {sym.name} line out of range"
             line = src[sym.line - 1]
-            assert line.lstrip().startswith(("class", "struct")), \
+            assert line.lstrip().startswith(("class", "struct", "template")), \
                 f"{label}: {sym.name} -> {sym.header}:{sym.line} is not a declaration: {line!r}"
             assert re.search(rf"\b{re.escape(sym.base)}\b", line), \
                 f"{label}: {sym.name} not named on {sym.header}:{sym.line}: {line!r}"
@@ -759,3 +759,54 @@ def test_default_render_is_unchanged_without_doc_base(tools_root, tmp_path):
     idx = mod.build_index(write_synthetic(tmp_path / "hdrs"))
     assert "| Symbol | Header | Line | Purpose |" in mod.render_index_md(idx)
     assert mod.render_symbol_map(idx).splitlines()[0] == "symbol\theader\tline"
+
+
+# --- Task 4: parser gaps ------------------------------------------------------
+# Real DDImage patterns the original parser missed: a single-line
+# `template<class T> class X` (RefCountedObject.h:51) and class names that
+# start lowercase (`class DDImage_API rTriangle`, rTriangle.h:24).
+
+GAP_HEADERS = {
+    "RefCounted.h": (
+        "class RefCountedObject { public: int c; };\n"
+        "template<class T> class RefCountedPtr\n"
+        "{ public: T* p; };\n"
+    ),
+    "rShape.h": (
+        "class SOME_API rShape : public rBase\n"
+        "{ public: int a; };\n"
+    ),
+}
+
+
+def test_single_line_template_classes_are_indexed(tools_root, tmp_path):
+    mod = load(tools_root)
+    idx = mod.build_index(write_synthetic(tmp_path, GAP_HEADERS))
+    assert "RefCountedPtr" in idx
+
+
+def test_template_parameter_is_not_indexed(tools_root, tmp_path):
+    mod = load(tools_root)
+    idx = mod.build_index(write_synthetic(tmp_path, GAP_HEADERS))
+    assert "T" not in idx
+
+
+def test_lowercase_prefixed_classes_are_indexed(tools_root, tmp_path):
+    mod = load(tools_root)
+    idx = mod.build_index(write_synthetic(tmp_path, GAP_HEADERS))
+    assert "rShape" in idx
+
+
+def test_known_real_classes_present(tools_root, nuke_installs):
+    import pytest as _pytest
+    if not nuke_installs:
+        _pytest.skip("no local Nuke install")
+    mod = load(tools_root)
+    idx = mod.build_index(nuke_installs[-1]["headers"])
+    # Knob::cstring is declared `class DDImage_API cstring` (Knob.h:1995 in
+    # 17.0) -- lowercase name plus export macro, exactly the pattern the old
+    # parser missed. GenericImagePlane stays out: doxygen documents it but no
+    # shipped 17.0 header declares it (stale docs, not a parser gap).
+    for sym in ("RefCountedPtr", "rTriangle", "Knob::cstring"):
+        assert sym in idx, f"{sym} missing from real-header index"
+    assert "GenericImagePlane" not in idx
