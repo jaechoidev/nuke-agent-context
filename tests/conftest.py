@@ -2,6 +2,7 @@ import importlib.util
 import json
 import pathlib
 import re
+import sys
 
 import pytest
 
@@ -41,6 +42,8 @@ def _load_nuke_detect():
         return None
     spec = importlib.util.spec_from_file_location("nuke_detect", path)
     mod = importlib.util.module_from_spec(spec)
+    # Register before exec: dataclasses resolves cls.__module__ via sys.modules.
+    sys.modules[spec.name] = mod
     spec.loader.exec_module(mod)
     return mod
 
