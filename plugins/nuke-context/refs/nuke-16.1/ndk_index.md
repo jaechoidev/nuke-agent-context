@@ -1,6 +1,6 @@
 # DDImage symbol index
 
-511 classes. Look up a symbol here, then read the real header for exact signatures.
+523 classes. Look up a symbol here, then read the real header for exact signatures.
 
 Nested classes are qualified (`Op::Description`). Search by the short name to see every variant.
 
@@ -33,6 +33,7 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `Box` | Box.h | 40 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Box.html |
 | `Box2f` | Quadtree.h | 20 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Box2f.html |
 | `Box3` | Box3.h | 19 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Box3.html |
+| `Box::iterator` | Box.h | 51 |  |
 | `BufferIop` | BufferIop.h | 14 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1BufferIop.html |
 | `BufferIopTile` | BufferIopTile.h | 35 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1BufferIopTile.html |
 | `BufferIopTile::LinePointers` | BufferIopTile.h | 58 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1BufferIopTile_1_1LinePointers.html |
@@ -47,7 +48,7 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `ChannelPack` | ChannelPack.h | 38 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ChannelPack.html |
 | `ChannelSet` | ChannelSet.h | 20 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ChannelSet.html |
 | `ChannelSetIterator` | ChannelSet.h | 342 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ChannelSetIterator.html |
-| `Channel_KnobI` | Channel_KnobI.h | 19 |  |
+| `Channel_KnobI` | Channel_KnobI.h | 19 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Channel__KnobI.html |
 | `CoShaderMaterialInterface` | ShaderOp.h | 191 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CoShaderMaterialInterface.html |
 | `CoShaderOp` | ShaderOp.h | 165 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CoShaderOp.html |
 | `CodecHandler` | CodecHandler.h | 17 |  |
@@ -59,7 +60,7 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `ColorKnobs::Binding` | GeomOpKnobs.h | 113 |  |
 | `ColorLookup` | ColorLookup.h | 42 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ColorLookup.html |
 | `ColoredShader` | Material.h | 135 |  |
-| `Colorspace_KnobI` | Colorspace_KnobI.h | 13 |  |
+| `Colorspace_KnobI` | Colorspace_KnobI.h | 13 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Colorspace__KnobI.html |
 | `ComplexLightOp` | ComplexLightOp.h | 17 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ComplexLightOp.html |
 | `ConstrainOpI` | ConstrainOpI.h | 22 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ConstrainOpI.html |
 | `ConstrainOpI::SubEngine` | ConstrainOpI.h | 64 |  |
@@ -68,12 +69,12 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `ControlPointCollection_KnobI::ControlPoint` | ControlPointCollectionKnobI.h | 38 |  |
 | `ConvertibleToIop` | ConvertibleToIop.h | 16 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ConvertibleToIop.html |
 | `Convolve` | Convolve.h | 40 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Convolve.html |
-| `ConvolveArray` | Convolve.h | 17 |  |
+| `ConvolveArray` | Convolve.h | 17 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1ConvolveArray.html |
 | `CreateOrEditGeomOp` | CreateOrEditGeomOp.h | 16 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CreateOrEditGeomOp.html |
 | `CreateOrEditGeomOp::Engine` | CreateOrEditGeomOp.h | 43 |  |
 | `CreateParentsGeomOpI` | GeomOpMixIns.h | 61 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CreateParentsGeomOpI.html |
 | `CreateParentsGeomOpI::SubEngine` | GeomOpMixIns.h | 71 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CreateParentsGeomOpI_1_1SubEngine.html |
-| `CurveDescription` | LookupCurves.h | 29 |  |
+| `CurveDescription` | LookupCurves.h | 29 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1CurveDescription.html |
 | `CurveI` | CurveI.h | 62 |  |
 | `CurveKnobI` | CurveKnobI.h | 16 |  |
 | `DeepAccumPixelOp` | DeepAccumPixelOp.h | 29 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepAccumPixelOp.html |
@@ -106,13 +107,13 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `DisplacementCoefficients` | SubdivisionContext.h | 21 |  |
 | `DownRez` | DownRez.h | 19 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DownRez.html |
 | `DrawIop` | DrawIop.h | 22 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DrawIop.html |
-| `Draw_Handle_Callback` | ViewerContext.h | 108 |  |
+| `Draw_Handle_Callback` | ViewerContext.h | 108 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1Draw__Handle__Callback.html |
 | `DrawableGeo` | ViewerContext.h | 123 |  |
 | `Dual2Chans` | SlrShadingContext.h | 239 |  |
 | `ElementI` | ElementI.h | 80 |  |
 | `ElementTransformI` | ElementI.h | 17 |  |
 | `EngineContext` | EngineContext.h | 18 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1EngineContext.html |
-| `Enumeration_KnobI` | Enumeration_KnobI.h | 17 |  |
+| `Enumeration_KnobI` | Enumeration_KnobI.h | 17 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Enumeration__KnobI.html |
 | `Executable` | Executable.h | 16 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Executable.html |
 | `Execute` | Execute.h | 42 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Execute.html |
 | `ExtendedOpProperties` | ExtendedOpProperties.h | 19 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ExtendedOpProperties.html |
@@ -126,9 +127,9 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `FileStreamRead` | FileStream.h | 21 |  |
 | `FileStreamWrite` | FileStream.h | 40 |  |
 | `FileWriter` | FileWriter.h | 25 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1FileWriter.html |
-| `File_KnobI` | File_KnobI.h | 14 |  |
+| `File_KnobI` | File_KnobI.h | 14 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1File__KnobI.html |
 | `Filter` | Filter.h | 36 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Filter.html |
-| `Filter::Coefficients` | Filter.h | 64 |  |
+| `Filter::Coefficients` | Filter.h | 64 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1Filter_1_1Coefficients.html |
 | `FilterPrimsGeomEngineI` | GeomOpMixIns.h | 133 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1FilterPrimsGeomEngineI.html |
 | `FlaggingKnob_Closure` | FlaggingKnobClosure.h | 25 |  |
 | `Format` | Format.h | 46 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Format.html |
@@ -142,10 +143,10 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `GeneralTile` | GeneralTile.h | 29 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeneralTile.html |
 | `GeoDescription` | GeoReaderDescription.h | 50 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeoDescription.html |
 | `GeoInfo` | GeoInfo.h | 266 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeoInfo.html |
-| `GeoInfo::Cache` | GeoInfo.h | 362 |  |
+| `GeoInfo::Cache` | GeoInfo.h | 362 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1GeoInfo_1_1Cache.html |
 | `GeoInfo::DrawLists` | GeoInfo.h | 336 |  |
 | `GeoInfo::FacePrimitiveMappingHelper` | GeoInfo.h | 274 |  |
-| `GeoInfoRenderState` | GeoInfo.h | 243 |  |
+| `GeoInfoRenderState` | GeoInfo.h | 243 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1GeoInfoRenderState.html |
 | `GeoLight` | GeoLight.h | 18 |  |
 | `GeoLight::Engine` | GeoLight.h | 106 |  |
 | `GeoObjectSelection` | GeoSelection.h | 33 |  |
@@ -173,20 +174,20 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `HConvolve` | HConvolve.h | 32 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1HConvolve.html |
 | `Hash` | Hash.h | 36 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Hash.html |
 | `HeapAllocator` | HeapAllocator.h | 30 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1HeapAllocator.html |
-| `Histogram_Data` | HistogramKnob.h | 19 |  |
+| `Histogram_Data` | HistogramKnob.h | 19 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Histogram__Data.html |
 | `IAllocator` | IAllocator.h | 30 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1IAllocator.html |
 | `IBufferFill` | MemoryBuffer.h | 60 |  |
 | `IBufferFillHeap` | MemoryBuffer.h | 106 |  |
 | `IDim` | Knobs.h | 323 |  |
 | `IOFStream` | IOFStream.h | 17 |  |
 | `IOStreamBuffer` | IOStreamBuffer.h | 16 |  |
-| `IRange` | Knobs.h | 1603 |  |
+| `IRange` | Knobs.h | 1603 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1IRange.html |
 | `IllumShader` | IllumShader.h | 27 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1IllumShader.html |
 | `ImageCacheReadI` | ImageCache.h | 37 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ImageCacheReadI.html |
 | `ImageCacheWriteI` | ImageCache.h | 80 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ImageCacheWriteI.html |
 | `ImagePlane` | ImagePlane.h | 40 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ImagePlane.html |
 | `ImagePlaneDescriptor` | ImagePlaneDescriptor.h | 16 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ImagePlaneDescriptor.html |
-| `Image_Cache` | ImageCache.h | 103 |  |
+| `Image_Cache` | ImageCache.h | 103 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Image__Cache.html |
 | `Image_Cache_Entry` | ImageCache.h | 22 |  |
 | `ImageableAndModelKnobs` | GeomOpKnobs.h | 68 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ImageableAndModelKnobs.html |
 | `ImageableAndModelKnobs::Binding` | GeomOpKnobs.h | 78 |  |
@@ -197,17 +198,18 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `Intersection` | Render.h | 41 |  |
 | `Iop` | Iop.h | 165 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Iop.html |
 | `Iop::PixelCallbackI` | Iop.h | 817 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Iop_1_1PixelCallbackI.html |
-| `Iop::TextureImage` | Iop.h | 940 |  |
-| `Iop::TextureImageInfo` | Iop.h | 863 |  |
+| `Iop::TextureImage` | Iop.h | 940 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1Iop_1_1TextureImage.html |
+| `Iop::TextureImageInfo` | Iop.h | 863 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1Iop_1_1TextureImageInfo.html |
 | `Iop::TextureImageInfo::UVTransform` | Iop.h | 871 |  |
 | `IopInfo` | IopInfo.h | 40 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1IopInfo.html |
 | `IopInfoOwner` | Iop.h | 42 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1IopInfoOwner.html |
 | `Knob` | Knob.h | 135 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Knob.html |
 | `Knob::HandleContext` | Knob.h | 1039 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Knob_1_1HandleContext.html |
 | `Knob::Indent` | Knob.h | 2011 |  |
-| `Knob::NotificationCallbackFunctor` | Knob.h | 701 |  |
-| `Knob::Script_List` | Knob.h | 1855 |  |
-| `Knob::VisibilityCallbackFunctor` | Knob.h | 714 |  |
+| `Knob::NotificationCallbackFunctor` | Knob.h | 701 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1Knob_1_1NotificationCallbackFunctor.html |
+| `Knob::Script_List` | Knob.h | 1855 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Knob_1_1Script__List.html |
+| `Knob::VisibilityCallbackFunctor` | Knob.h | 714 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1Knob_1_1VisibilityCallbackFunctor.html |
+| `Knob::cstring` | Knob.h | 1995 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Knob_1_1cstring.html |
 | `KnobChangeGroup` | Knob.h | 2095 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1KnobChangeGroup.html |
 | `KnobChangeGroup::Listener` | Knob.h | 2105 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1KnobChangeGroup_1_1Listener.html |
 | `KnobChangedObserverI` | KnobChangedObserverI.h | 14 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1KnobChangedObserverI.html |
@@ -216,7 +218,7 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `Knob_Closure` | Knobs.h | 70 |  |
 | `LUT` | LUT.h | 45 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LUT.html |
 | `LayerI` | LayerI.h | 17 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LayerI.html |
-| `License` | Description.h | 65 |  |
+| `License` | Description.h | 65 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1License.html |
 | `LightContext` | LightContext.h | 28 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LightContext.html |
 | `LightOp` | LightOp.h | 31 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LightOp.html |
 | `LightSceneOp` | LightSceneOp.h | 27 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LightSceneOp.html |
@@ -231,8 +233,8 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `Lock` | Thread.h | 55 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Lock.html _(2 variants)_ |
 | `LookAt` | LookAt.h | 25 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LookAt.html |
 | `LookupCurves` | LookupCurves.h | 82 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LookupCurves.html |
-| `LookupCurves::SKey` | LookupCurves.h | 87 |  |
-| `LookupCurves_KnobI` | LookupCurves.h | 194 |  |
+| `LookupCurves::SKey` | LookupCurves.h | 87 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1LookupCurves_1_1SKey.html |
+| `LookupCurves_KnobI` | LookupCurves.h | 194 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LookupCurves__KnobI.html |
 | `MBParticleSpriteGenerator` | ParticlesSprite.h | 214 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MBParticleSpriteGenerator.html |
 | `MBSceneSpriteGenerator` | ParticlesSprite.h | 170 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MBSceneSpriteGenerator.html |
 | `MaskKnobs` | GeomOpKnobs.h | 378 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MaskKnobs.html |
@@ -250,6 +252,7 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `MemRegistrant` | MemRegistrant.h | 23 |  |
 | `Memory` | Memory.h | 95 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Memory.html |
 | `Memory::MemoryInfo` | Memory.h | 109 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Memory_1_1MemoryInfo.html |
+| `Memory::bytes` | Memory.h | 308 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Memory_1_1bytes.html |
 | `MemoryBuffer` | MemoryBuffer.h | 24 |  |
 | `MemoryBufferGuard` | MemoryBuffer.h | 129 |  |
 | `MemoryHolder` | MemoryHolder.h | 20 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MemoryHolder.html |
@@ -268,7 +271,7 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `ModifyGeomOp::ModifyEngine` | ModifyGeomOp.h | 33 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ModifyGeomOp_1_1ModifyEngine.html |
 | `ModifyPathsGeomOpI` | GeomOpMixIns.h | 174 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ModifyPathsGeomOpI.html |
 | `ModifyPathsGeomOpI::SubEngine` | GeomOpMixIns.h | 186 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ModifyPathsGeomOpI_1_1SubEngine.html |
-| `MultiArray_KnobI` | MultiArray_KnobI.h | 34 |  |
+| `MultiArray_KnobI` | MultiArray_KnobI.h | 34 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MultiArray__KnobI.html |
 | `MultiArray_KnobI::KnobVisible` | MultiArray_KnobI.h | 72 |  |
 | `MultiTileIop` | MultiTileIop.h | 36 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MultiTileIop.html |
 | `NoIop` | NoIop.h | 22 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1NoIop.html |
@@ -280,13 +283,13 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `Op` | Op.h | 126 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Op.html |
 | `Op::Description` | Op.h | 2317 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Op_1_1Description.html |
 | `Op::EventContext` | Op.h | 484 |  |
-| `Op::Input` | Op.h | 149 |  |
-| `OpGraphLocation` | OpState.h | 83 |  |
+| `Op::Input` | Op.h | 149 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1Op_1_1Input.html |
+| `OpGraphLocation` | OpState.h | 83 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1OpGraphLocation.html |
 | `OpManager` | OpManager.h | 27 |  |
 | `OpMessage` | OpMessage.h | 35 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1OpMessage.html |
 | `OpMessageHandler` | OpMessageHandler.h | 32 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1OpMessageHandler.html |
 | `OpMessageObserver` | OpMessageObserver.h | 30 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1OpMessageObserver.html |
-| `OpState` | OpState.h | 37 |  |
+| `OpState` | OpState.h | 37 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1OpState.html |
 | `OpTimer` | OpTimer.h | 17 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1OpTimer.html |
 | `OpTimer::PerformanceInfo` | OpTimer.h | 28 |  |
 | `OpTree` | OpTree.h | 30 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1OpTree.html |
@@ -302,14 +305,14 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `ParticleSearchInfo` | ParticlesSprite.h | 146 |  |
 | `ParticleSystem` | ParticleOp.h | 56 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ParticleSystem.html |
 | `ParticleSystem::BounceInfo` | ParticleOp.h | 74 |  |
-| `ParticleSystem::Source` | ParticleOp.h | 61 |  |
+| `ParticleSystem::Source` | ParticleOp.h | 61 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1ParticleSystem_1_1Source.html |
 | `Particles` | Particles.h | 17 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Particles.html |
 | `ParticlesSprite` | ParticlesSprite.h | 37 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ParticlesSprite.html |
-| `PathExpression_KnobI` | PathExpressionKnobI.h | 18 |  |
+| `PathExpression_KnobI` | PathExpressionKnobI.h | 18 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PathExpression__KnobI.html |
 | `PathExpression_KnobI::ExpressionType` | PathExpressionKnobI.h | 31 |  |
 | `PathKnobs` | GeomOpKnobs.h | 302 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PathKnobs.html |
 | `PathKnobs::Binding` | GeomOpKnobs.h | 305 |  |
-| `Path_KnobI` | PathKnobI.h | 15 |  |
+| `Path_KnobI` | PathKnobI.h | 15 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Path__KnobI.html |
 | `Pixel` | Pixel.h | 33 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Pixel.html |
 | `PixelIop` | PixelIop.h | 28 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PixelIop.html |
 | `PlanarI` | PlanarI.h | 25 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PlanarI.html |
@@ -327,7 +330,7 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `PolyMesh::SubFace` | PolyMesh.h | 18 |  |
 | `Polygon` | Polygon.h | 20 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Polygon.html |
 | `PolygonPrimitive` | PolygonPrimitive.h | 20 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PolygonPrimitive.html |
-| `PositionVector_KnobI` | PositionVector_KnobI.h | 16 |  |
+| `PositionVector_KnobI` | PositionVector_KnobI.h | 16 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PositionVector__KnobI.html |
 | `PreValidateContext` | Op.h | 99 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PreValidateContext.html |
 | `PrimTokensDef` | SlrSurfaceShader.h | 17 |  |
 | `Primitive` | Primitive.h | 58 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Primitive.html |
@@ -337,15 +340,15 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `ProjectionFunc` | ProjectionFunc.h | 25 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ProjectionFunc.html |
 | `ProjectionFunc::Description` | ProjectionFunc.h | 89 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ProjectionFunc_1_1Description.html |
 | `ProxyContext` | ProxyContext.h | 40 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ProxyContext.html |
-| `PtrStridedIterator` | PtrStridedIterator.h | 12 |  |
+| `PtrStridedIterator` | PtrStridedIterator.h | 12 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1PtrStridedIterator.html |
 | `PythonCustomKnobI` | PythonCustomKnobI.h | 14 |  |
 | `Quadtree` | Quadtree.h | 97 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Quadtree.html |
-| `QuadtreeNode` | Quadtree.h | 73 |  |
-| `Radio_KnobI` | Radio_KnobI.h | 16 |  |
+| `QuadtreeNode` | Quadtree.h | 73 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1QuadtreeNode.html |
+| `Radio_KnobI` | Radio_KnobI.h | 16 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Radio__KnobI.html |
 | `Random` | ParticleOp.h | 367 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Random.html |
 | `RawGeneralTile` | RawGeneralTile.h | 18 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RawGeneralTile.html |
 | `RawGeneralTile::LinePointers` | RawGeneralTile.h | 55 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RawGeneralTile_1_1LinePointers.html |
-| `Ray` | Raycast.h | 34 |  |
+| `Ray` | Raycast.h | 34 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1Ray.html |
 | `Read` | Read.h | 79 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Read.html |
 | `ReadFileKnobOwner` | Read.h | 30 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ReadFileKnobOwner.html |
 | `ReadGeo` | ReadGeo.h | 31 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ReadGeo.html |
@@ -358,6 +361,7 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `RecursiveLock` | Thread.h | 188 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RecursiveLock.html _(4 variants)_ |
 | `RefCountedFloatBuffer` | RefCountedFloatBuffer.h | 21 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RefCountedFloatBuffer.html |
 | `RefCountedObject` | RefCountedObject.h | 14 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RefCountedObject.html |
+| `RefCountedPtr` | RefCountedObject.h | 51 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RefCountedPtr.html |
 | `RegularGrid` | Raycast.h | 263 |  |
 | `Render` | Render.h | 51 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Render.html |
 | `Render::Span` | Render.h | 61 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Render_1_1Span.html |
@@ -373,22 +377,22 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `RowCacheTile` | RowCacheTile.h | 37 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RowCacheTile.html |
 | `STL` | STLAllocator.h | 180 |  |
 | `SampleInfo` | SlrShadingContext.h | 80 |  |
-| `SamplePosition` | Sampler.h | 35 |  |
+| `SamplePosition` | Sampler.h | 35 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1SamplePosition.html |
 | `Sampler` | Sampler.h | 62 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Sampler.html |
 | `Scene` | Scene.h | 65 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Scene.html |
-| `SceneGraph_KnobI` | SceneGraph_KnobI.h | 36 |  |
-| `SceneItem` | SceneItem.h | 12 |  |
+| `SceneGraph_KnobI` | SceneGraph_KnobI.h | 36 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SceneGraph__KnobI.html |
+| `SceneItem` | SceneItem.h | 12 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1SceneItem.html |
 | `SceneOpI` | SceneOpI.h | 311 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SceneOpI.html |
 | `SceneOpI::AxisValsProvider` | SceneOpI.h | 344 |  |
 | `SceneOpI::Description` | SceneOpI.h | 321 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SceneOpI_1_1Description.html |
 | `SceneOpNodeI` | SceneOpI.h | 130 |  |
-| `SceneOpNodeI::ConfigParams` | SceneOpI.h | 134 |  |
-| `SceneOpNodeI::SceneData` | SceneOpI.h | 150 |  |
+| `SceneOpNodeI::ConfigParams` | SceneOpI.h | 134 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1SceneOpNodeI_1_1ConfigParams.html |
+| `SceneOpNodeI::SceneData` | SceneOpI.h | 150 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1SceneOpNodeI_1_1SceneData.html |
 | `SceneOpNodeI::SceneOpKnobs` | SceneOpI.h | 171 |  |
-| `SceneOpNodeI::SharedData` | SceneOpI.h | 161 |  |
+| `SceneOpNodeI::SharedData` | SceneOpI.h | 161 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1SceneOpNodeI_1_1SharedData.html |
 | `SceneReader` | SceneReader.h | 21 |  |
 | `SceneReaderPlugin` | SceneReaderPlugin.h | 18 |  |
-| `SceneView_KnobI` | SceneView_KnobI.h | 32 |  |
+| `SceneView_KnobI` | SceneView_KnobI.h | 32 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SceneView__KnobI.html |
 | `ScriptKnobI` | ScriptKnobI.h | 11 |  |
 | `SelectionFilters` | ViewerContext.h | 399 |  |
 | `ShaderOp` | ShaderOp.h | 43 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ShaderOp.html |
@@ -416,6 +420,7 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `SlrPrimEnabledLighting` | SlrPrimInfo.h | 101 |  |
 | `SlrPrimInfo` | SlrPrimInfo.h | 25 |  |
 | `SlrRayBundle` | SlrRayContext.h | 223 |  |
+| `SlrRayBundle::iterator` | SlrRayContext.h | 272 |  |
 | `SlrRayContext` | SlrRayContext.h | 34 |  |
 | `SlrRenderOp` | SlrEngineContext.h | 45 |  |
 | `SlrRenderOptionsKnobs` | GeomOpKnobs.h | 427 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SlrRenderOptionsKnobs.html |
@@ -454,19 +459,21 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `SourceGeomOp` | SourceGeomOp.h | 27 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SourceGeomOp.html |
 | `SourceGeomOp::SourceEngine` | SourceGeomOp.h | 47 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SourceGeomOp_1_1SourceEngine.html |
 | `SpinGuard` | Thread.h | 508 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SpinGuard.html |
-| `Sprite` | ParticlesSprite.h | 26 |  |
+| `Sprite` | ParticlesSprite.h | 26 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1Sprite.html |
 | `SpriteGenerator` | ParticlesSprite.h | 111 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SpriteGenerator.html |
 | `StringKnobI` | StringKnobI.h | 16 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1StringKnobI.html |
 | `StxBundle` | SlrShadingContext.h | 936 |  |
+| `StxBundle::iterator` | SlrShadingContext.h | 987 |  |
 | `StxLayeringStack` | SlrShadingContext.h | 1034 |  |
 | `StxLayeringStackBundle` | SlrShadingContext.h | 1096 |  |
+| `StxLayeringStackBundle::iterator` | SlrShadingContext.h | 1125 |  |
 | `SubdivisionContext` | SubdivisionContext.h | 47 |  |
 | `SurfaceShaderOp` | ShaderOp.h | 230 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SurfaceShaderOp.html |
-| `SurfaceShaderOp::VisibilityTraits` | ShaderOp.h | 242 |  |
+| `SurfaceShaderOp::VisibilityTraits` | ShaderOp.h | 242 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1SurfaceShaderOp_1_1VisibilityTraits.html |
 | `TQuaternion` | Quaternion.h | 39 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TQuaternion.html |
 | `Table_KnobI` | TableKnobI.h | 17 |  |
 | `Table_KnobI::MenuItem` | TableKnobI.h | 212 |  |
-| `Text_KnobI` | TextKnobI.h | 17 |  |
+| `Text_KnobI` | TextKnobI.h | 17 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Text__KnobI.html |
 | `TextureFilter` | TextureFilter.h | 17 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TextureFilter.html |
 | `Thread` | Thread.h | 541 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Thread.html |
 | `Thread::RunningThreadsInfo` | Thread.h | 553 |  |
@@ -478,7 +485,7 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `TransformGeo` | TransformGeo.h | 25 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TransformGeo.html |
 | `TransformGeomOpI` | GeomOpMixIns.h | 20 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TransformGeomOpI.html |
 | `TransformGeomOpI::SubEngine` | GeomOpMixIns.h | 39 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TransformGeomOpI_1_1SubEngine.html |
-| `TransformJack_ClientI` | TransformJackKnobI.h | 24 |  |
+| `TransformJack_ClientI` | TransformJackKnobI.h | 24 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TransformJack__ClientI.html |
 | `TransformJack_KnobI` | TransformJackKnobI.h | 86 |  |
 | `TransformKnobs` | GeomOpKnobs.h | 226 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TransformKnobs.html |
 | `TransformKnobs::Binding` | GeomOpKnobs.h | 255 |  |
@@ -487,7 +494,7 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `Triangle` | Triangle.h | 16 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Triangle.html |
 | `TryLockGuard` | Thread.h | 516 |  |
 | `TryWriteGuard` | Thread.h | 471 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TryWriteGuard.html |
-| `USDSceneGraph_KnobI` | USDSceneGraph_KnobI.h | 29 |  |
+| `USDSceneGraph_KnobI` | USDSceneGraph_KnobI.h | 29 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1USDSceneGraph__KnobI.html |
 | `UpRez` | UpRez.h | 21 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1UpRez.html |
 | `VArray` | VertexContext.h | 38 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1VArray.html |
 | `VConvolve` | VConvolve.h | 36 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1VConvolve.html |
@@ -505,9 +512,9 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `ViewFrustum` | ViewFrustum.h | 45 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ViewFrustum.html |
 | `ViewSet` | ViewSet.h | 21 |  |
 | `ViewerCache` | ViewerCache.h | 22 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ViewerCache.html |
-| `ViewerCache::LineEnds` | ViewerCache.h | 77 |  |
+| `ViewerCache::LineEnds` | ViewerCache.h | 77 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1ViewerCache_1_1LineEnds.html |
 | `ViewerContext` | ViewerContext.h | 420 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ViewerContext.html |
-| `ViewerContext::ViewerWindowFormatContext` | ViewerContext.h | 550 |  |
+| `ViewerContext::ViewerWindowFormatContext` | ViewerContext.h | 550 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/structDD_1_1Image_1_1ViewerContext_1_1ViewerWindowFormatContext.html |
 | `WidgetContext` | WidgetContext.h | 25 |  |
 | `WireframeShader` | Material.h | 150 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1WireframeShader.html |
 | `WorldMatrixProvider` | AxisOp.h | 77 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1WorldMatrixProvider.html |
@@ -517,3 +524,8 @@ Nested classes are qualified (`Op::Description`). Search by the short name to se
 | `WriteGuard` | Thread.h | 449 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1WriteGuard.html |
 | `Writer` | Writer.h | 32 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Writer.html |
 | `Writer::Description` | Writer.h | 319 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Writer_1_1Description.html |
+| `parallel_for_impl` | ParallelFor.h | 26 |  |
+| `rPoint` | rPoint.h | 18 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1rPoint.html |
+| `rPrimitive` | rPrimitive.h | 52 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1rPrimitive.html |
+| `rTriangle` | rTriangle.h | 24 | https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1rTriangle.html |
+| `rebind` | STLAllocator.h | 136 |  |
