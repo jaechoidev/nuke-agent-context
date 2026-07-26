@@ -9,12 +9,15 @@ to the source when you need the depth.
 
 - **Original synthesis.** Every article is written from scratch; sources are
   cited, never republished. Go to the linked page for the full treatment.
-- **A different trust tier from the official refs.** These summarise blogs,
-  tutorials and open-source repos — *unofficial, unversioned, and liable to rot.*
-  Treat them as practitioner perspective, not authority. When a claim here
-  matters for correctness, verify it against the version-pinned official
-  references (`refs/nuke-<VER>/`) and the real headers/docs. Where the two
-  disagree, the official source wins.
+- **Reference-only. Verified, then used — never believed.** These summarise
+  blogs, tutorials and open-source repos — *unofficial, unversioned, and liable
+  to rot* (PySide2-era patterns, version-specific build flags, workarounds
+  Foundry has since fixed). Before any claim from these pages influences code,
+  verify it against the official tier: the version-pinned index
+  (`refs/nuke-<VER>/`), the versioned Foundry page, the real header, or a
+  compile/`nuke -t` check. Where the two disagree, the official source wins.
+  A claim you cannot verify is presented to the user as **unverified community
+  practice** — it is never applied silently.
 - **A map, not a manual.** The articles teach the terrain and route you to the
   best source; exact APIs and signatures live in the API indexes, and the
   authoritative concept explanations live in the Foundry guides

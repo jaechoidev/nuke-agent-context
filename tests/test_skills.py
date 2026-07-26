@@ -120,3 +120,32 @@ def test_performance_skill_routes_not_duplicates(plugin_root):
 def test_performance_skill_requires_measurement(plugin_root):
     _, body = frontmatter(plugin_root / "skills" / "nuke-performance" / "SKILL.md")
     assert "measure" in body.lower()  # perf claims verified, not believed
+
+
+def test_tool_structure_has_verification_ladder(plugin_root):
+    _, body = frontmatter(plugin_root / "skills" / "nuke-tool-structure" / "SKILL.md")
+    low = body.lower()
+    for needle in ["nuke -t", "mcp", "checklist", "report which rung"]:
+        assert needle in low, f"ladder incomplete: missing {needle!r}"
+
+
+def test_tool_structure_has_git_discipline(plugin_root):
+    _, body = frontmatter(plugin_root / "skills" / "nuke-tool-structure" / "SKILL.md")
+    assert "git init" in body
+    low = body.lower()
+    assert "milestone" in low or "rung passes" in low
+    assert "git-github-setup" in body     # routes to the shipped doc
+
+
+def test_tool_structure_absorbs_tdd_guardrails(plugin_root):
+    _, body = frontmatter(plugin_root / "skills" / "nuke-tool-structure" / "SKILL.md")
+    low = body.lower()
+    assert "failing test" in low
+    assert "never edit the test" in low
+
+
+def test_references_readme_is_verify_before_use(plugin_root):
+    text = (plugin_root / "references" / "README.md").read_text().lower()
+    assert "verified" in text and "before" in text
+    assert "unverified" in text           # surface unverifiable claims as such
+    assert "never" in text                # never applied silently
