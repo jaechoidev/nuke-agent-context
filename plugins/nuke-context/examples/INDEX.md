@@ -19,9 +19,12 @@ One row per example, generated from each file's `Teaches:` header.
 | `blink/bookofshaders/12_cellular.blink` | Voronoi -- nearest random feature point |
 | `blink/bookofshaders/13_fbm.blink` | fractal brownian motion (summed octaves) |
 | `ndk/DeepGain.cpp` | per-sample processing in a DeepPixelOp |
+| `ndk/DeepPrune.cpp` | plane-level doDeepEngine with DeepInPlaceOutputPlane |
 | `ndk/EdgeDetect.cpp` | Iop reading neighbouring pixels via a Tile |
 | `ndk/Exposure.cpp` | PixelIop, output depends only on the input pixel |
+| `ndk/FrameBlend.cpp` | split_input + per-split inputContext for multi-frame access |
 | `ndk/Gradient.cpp` | a source Iop with no input, setting its own info_ |
+| `ndk/MinimalReader.cpp` | the smallest Reader subclass + Reader::Description registration |
 | `ndk/MixInputs.cpp` | a two-input Iop reading both inputs per scanline |
 | `ndk/Premult.cpp` | PixelIop channel math across channels |
 | `ndk/TimeOffset.cpp` | reading a different frame via inputContext() |
