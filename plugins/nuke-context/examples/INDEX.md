@@ -31,7 +31,9 @@ One row per example, generated from each file's `Teaches:` header.
 | `ndk/Vignette.cpp` | position-aware PixelIop using the format |
 | `python/backdrop_selected.py` | node position is data; sizing a BackdropNode |
 | `python/bake_expression.py` | the knob animation model over a frame range |
+| `python/dockable_panel_stateful.py` | panel state persisted onto node knobs, surviving save/reload |
 | `python/gizmo_builder.py` | a gizmo is an authored Group with promoted knobs |
 | `python/knob_linker.py` | knobChanged callbacks and deferred, event-driven UI |
 | `python/pyqt_panel.py` | a PySide6 widget registered as a Nuke panel |
+| `python/render_submitter_shape.py` | the architecture of a render submitter - introspect, build a job, confirm, emit |
 | `python/select_downstream.py` | the graph as a data structure you traverse |
