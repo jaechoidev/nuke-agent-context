@@ -3,6 +3,7 @@ import re
 
 
 def test_marketplace_names_the_plugin(marketplace):
+    assert marketplace["name"] == "nuke-agent-context"
     plugins = {p["name"] for p in marketplace["plugins"]}
     assert "nuke-context" in plugins
     entry = next(p for p in marketplace["plugins"] if p["name"] == "nuke-context")
