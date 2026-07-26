@@ -1,0 +1,512 @@
+symbol	header	line	url
+AccountedVector	AccountedVector.h	12	
+Alloca	ARRAY.h	51	
+Allocators	Allocators.h	18	
+AnimationHolderI	AnimationHolderI.h	14	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1AnimationHolderI.html
+ArrayKnobData	Knobs.h	330	
+ArrayKnobI	ArrayKnobI.h	26	
+ArrayKnobRef	ArrayKnobI.h	75	
+AttribContext	GeoInfo.h	188	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1AttribContext.html
+Attribute	Attribute.h	62	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Attribute.html
+AuthoredValue	GeomOpKnobs.h	23	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1AuthoredValue.html
+Authoring	Authoring.h	34	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Authoring.html
+AuthoringProvider	SceneOpI.h	56	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1AuthoringProvider.html
+AuthoringSettings	Authoring.h	186	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1AuthoringSettings.html
+Axis	AxisOp.h	38	
+AxisOp	AxisOp.h	111	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1AxisOp.html
+AxisSceneOp	AxisSceneOp.h	27	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1AxisSceneOp.html
+AxisVals	AxisVals.h	28	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1AxisVals.html
+Axis_KnobI	Axis_KnobI.h	23	
+BaseLockGuard	Thread.h	492	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1BaseLockGuard.html
+BaseReadWriteGuard	Thread.h	416	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1BaseReadWriteGuard.html
+BasicGrid	Raycast.h	112	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1BasicGrid.html
+Black	Black.h	23	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Black.html
+BlockAllocator	BlockAllocator.h	33	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1BlockAllocator.html
+Blur	Blur.h	29	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Blur.html
+Box	Box.h	40	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Box.html
+Box2f	Quadtree.h	20	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Box2f.html
+Box3	Box3.h	19	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Box3.html
+BufferIop	BufferIop.h	14	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1BufferIop.html
+BufferIopTile	BufferIopTile.h	35	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1BufferIopTile.html
+BufferIopTile::LinePointers	BufferIopTile.h	58	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1BufferIopTile_1_1LinePointers.html
+Bundle	MetaData.h	263	
+Bundle::CompareKey	MetaData.h	265	
+CacheBase	Interest.h	22	
+CameraOp	CameraOp.h	44	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CameraOp.html
+CameraSceneOp	CameraSceneOp.h	19	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CameraSceneOp.html
+CameraSceneOp::CameraProvider	CameraSceneOp.h	53	
+ChannelKnobData	Knobs.h	335	
+ChannelMap	ChannelMap.h	14	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ChannelMap.html
+ChannelPack	ChannelPack.h	38	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ChannelPack.html
+ChannelSet	ChannelSet.h	20	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ChannelSet.html
+ChannelSetIterator	ChannelSet.h	342	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ChannelSetIterator.html
+Channel_KnobI	Channel_KnobI.h	19	
+CoShaderMaterialInterface	ShaderOp.h	191	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CoShaderMaterialInterface.html
+CoShaderOp	ShaderOp.h	165	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CoShaderOp.html
+CodecHandler	CodecHandler.h	17	
+CodecOp	CodecOp.h	24	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CodecOp.html
+CodecReaderFormat	Reader.h	43	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CodecReaderFormat.html
+CollisionResult	Raycast.h	41	
+ColorKnobI	ColorKnobI.h	12	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ColorKnobI.html
+ColorKnobs	GeomOpKnobs.h	102	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ColorKnobs.html
+ColorKnobs::Binding	GeomOpKnobs.h	113	
+ColorLookup	ColorLookup.h	42	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ColorLookup.html
+ColoredShader	Material.h	135	
+Colorspace_KnobI	Colorspace_KnobI.h	13	
+ComplexLightOp	ComplexLightOp.h	17	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ComplexLightOp.html
+ConstrainOpI	ConstrainOpI.h	22	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ConstrainOpI.html
+ConstrainOpI::SubEngine	ConstrainOpI.h	64	
+ControlPointCollectionInterface	ControlPointCollectionKnobI.h	19	
+ControlPointCollection_KnobI	ControlPointCollectionKnobI.h	27	
+ControlPointCollection_KnobI::ControlPoint	ControlPointCollectionKnobI.h	38	
+ConvertibleToIop	ConvertibleToIop.h	16	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ConvertibleToIop.html
+Convolve	Convolve.h	40	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Convolve.html
+ConvolveArray	Convolve.h	17	
+CreateOrEditGeomOp	CreateOrEditGeomOp.h	16	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CreateOrEditGeomOp.html
+CreateOrEditGeomOp::Engine	CreateOrEditGeomOp.h	43	
+CreateParentsGeomOpI	GeomOpMixIns.h	61	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CreateParentsGeomOpI.html
+CreateParentsGeomOpI::SubEngine	GeomOpMixIns.h	71	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1CreateParentsGeomOpI_1_1SubEngine.html
+CurveDescription	LookupCurves.h	29	
+CurveI	CurveI.h	62	
+CurveKnobI	CurveKnobI.h	16	
+DeepAccumPixelOp	DeepAccumPixelOp.h	29	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepAccumPixelOp.html
+DeepFilterOp	DeepFilterOp.h	20	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepFilterOp.html
+DeepInPlaceOutputPlane	DeepPlane.h	319	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepInPlaceOutputPlane.html
+DeepInfo	DeepInfo.h	20	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepInfo.html
+DeepLightSample	DeepSample.h	110	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepLightSample.html
+DeepOnlyOp	DeepOp.h	167	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepOnlyOp.html
+DeepOp	DeepOp.h	37	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepOp.html
+DeepOutPixel	DeepPlane.h	175	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepOutPixel.html
+DeepOutputPixel	DeepPixel.h	192	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepOutputPixel.html
+DeepOutputPlane	DeepPlane.h	263	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepOutputPlane.html
+DeepPixel	DeepPixel.h	24	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepPixel.html
+DeepPixelOp	DeepPixelOp.h	12	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepPixelOp.html
+DeepPlane	DeepPlane.h	23	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepPlane.html
+DeepReader	DeepReader.h	57	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepReader.html
+DeepReader::Description	DeepReader.h	95	
+DeepReaderFormat	DeepReader.h	26	
+DeepReaderOwner	DeepReader.h	33	
+DeepSample	DeepSample.h	22	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepSample.html
+DeepSampleVector	DeepSample.h	230	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepSampleVector.html
+DeepWriter	DeepWriter.h	40	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepWriter.html
+DeepWriter::Description	DeepWriter.h	72	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepWriter_1_1Description.html
+DeepWriterOwner	DeepWriter.h	16	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DeepWriterOwner.html
+DefaultAllocator	STLAllocator.h	153	
+DepthMapRender	DepthMapRender.h	20	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DepthMapRender.html
+Description	Description.h	103	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Description.html
+DirectGeneralTile	DirectGeneralTile.h	18	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DirectGeneralTile.html
+DirectGeneralTile::LinePointers	DirectGeneralTile.h	55	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DirectGeneralTile_1_1LinePointers.html
+DisplacementCoefficients	SubdivisionContext.h	21	
+DownRez	DownRez.h	19	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DownRez.html
+DrawIop	DrawIop.h	22	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1DrawIop.html
+Draw_Handle_Callback	ViewerContext.h	108	
+DrawableGeo	ViewerContext.h	123	
+Dual2Chans	SlrShadingContext.h	239	
+ElementI	ElementI.h	80	
+ElementTransformI	ElementI.h	17	
+EngineContext	EngineContext.h	18	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1EngineContext.html
+Enumeration_KnobI	Enumeration_KnobI.h	17	
+Executable	Executable.h	16	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Executable.html
+Execute	Execute.h	42	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Execute.html
+ExtendedOpProperties	ExtendedOpProperties.h	19	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ExtendedOpProperties.html
+FileHandler	FileOp.h	16	
+FileIop	FileIop.h	24	
+FileOp	FileOp.h	56	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1FileOp.html
+FileRead	FileRead.h	22	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1FileRead.html
+FileReader	FileReader.h	26	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1FileReader.html
+FileSet	FileSet.h	26	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1FileSet.html
+FileSet::Dir	FileSet.h	28	
+FileStreamRead	FileStream.h	21	
+FileStreamWrite	FileStream.h	40	
+FileWriter	FileWriter.h	25	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1FileWriter.html
+File_KnobI	File_KnobI.h	14	
+Filter	Filter.h	36	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Filter.html
+Filter::Coefficients	Filter.h	64	
+FilterPrimsGeomEngineI	GeomOpMixIns.h	133	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1FilterPrimsGeomEngineI.html
+FlaggingKnob_Closure	FlaggingKnobClosure.h	25	
+Format	Format.h	46	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Format.html
+FormatPair	Format.h	149	
+FrameExtentProviderI	FrameExtentProviderI.h	14	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1FrameExtentProviderI.html
+FrameRangeControls	FrameRangeKnob.h	17	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1FrameRangeControls.html
+GLCache	GlCacheApi.h	21	
+GPUContext	GPUContext.h	22	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GPUContext.html
+GeneralInfo	GeneralInfo.h	14	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeneralInfo.html
+GeneralInfoProvider	GeneralInfo.h	64	
+GeneralTile	GeneralTile.h	29	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeneralTile.html
+GeoDescription	GeoReaderDescription.h	50	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeoDescription.html
+GeoInfo	GeoInfo.h	266	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeoInfo.html
+GeoInfo::Cache	GeoInfo.h	362	
+GeoInfo::DrawLists	GeoInfo.h	336	
+GeoInfo::FacePrimitiveMappingHelper	GeoInfo.h	274	
+GeoInfoRenderState	GeoInfo.h	243	
+GeoLight	GeoLight.h	18	
+GeoLight::Engine	GeoLight.h	106	
+GeoObjectSelection	GeoSelection.h	33	
+GeoOp	GeoOp.h	45	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeoOp.html
+GeoReader	GeoReader.h	32	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeoReader.html
+GeoSelect_KnobI	GeoSelectKnobI.h	18	
+GeoSelection	GeoSelection.h	71	
+GeoSelection::ReadWriteHandle	GeoSelection.h	118	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeoSelection_1_1ReadWriteHandle.html
+GeoWriter	GeoWriter.h	28	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeoWriter.html
+GeoWriter::Description	GeoWriter.h	155	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeoWriter_1_1Description.html
+Geo_KnobI	Geo_KnobI.h	17	
+GeomOp	GeomOp.h	460	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeomOp.html
+GeomOp::Description	GeomOp.h	471	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeomOp_1_1Description.html
+GeomOp::TargetHash	GeomOp.h	934	
+GeomOpEngine	GeomOp.h	70	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeomOpEngine.html
+GeomOpEngine::Input	GeomOp.h	367	
+GeomOpEngine::KnobBinding	GeomOp.h	75	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeomOpEngine_1_1KnobBinding.html
+GeometryList	GeometryList.h	20	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeometryList.html
+GeometryList::ObjectRange	GeometryList.h	123	
+GeometryProviderI	GeometryProviderI.h	41	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1GeometryProviderI.html
+GridCell	Raycast.h	164	
+GridCellPointsIterator	Raycast.h	207	
+GsvKnobI	GsvKnobI.h	16	
+Guard	Thread.h	500	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Guard.html
+HConvolve	HConvolve.h	32	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1HConvolve.html
+Hash	Hash.h	36	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Hash.html
+HeapAllocator	HeapAllocator.h	30	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1HeapAllocator.html
+Histogram_Data	HistogramKnob.h	19	
+IAllocator	IAllocator.h	30	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1IAllocator.html
+IBufferFill	MemoryBuffer.h	60	
+IBufferFillHeap	MemoryBuffer.h	106	
+IDim	Knobs.h	323	
+IOFStream	IOFStream.h	17	
+IOStreamBuffer	IOStreamBuffer.h	16	
+IRange	Knobs.h	1603	
+IllumShader	IllumShader.h	27	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1IllumShader.html
+ImageCacheReadI	ImageCache.h	37	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ImageCacheReadI.html
+ImageCacheWriteI	ImageCache.h	80	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ImageCacheWriteI.html
+ImagePlane	ImagePlane.h	40	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ImagePlane.html
+ImagePlaneDescriptor	ImagePlaneDescriptor.h	16	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ImagePlaneDescriptor.html
+Image_Cache	ImageCache.h	103	
+Image_Cache_Entry	ImageCache.h	22	
+ImageableAndModelKnobs	GeomOpKnobs.h	68	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ImageableAndModelKnobs.html
+ImageableAndModelKnobs::Binding	GeomOpKnobs.h	78	
+Info2D	Info2D.h	28	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Info2D.html
+Info2DProvider	Info2D.h	160	
+Interest	Interest.h	79	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Interest.html
+InterestRatchet	Interest.h	36	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1InterestRatchet.html
+Intersection	Render.h	41	
+Iop	Iop.h	165	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Iop.html
+Iop::PixelCallbackI	Iop.h	817	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Iop_1_1PixelCallbackI.html
+Iop::TextureImage	Iop.h	940	
+Iop::TextureImageInfo	Iop.h	863	
+Iop::TextureImageInfo::UVTransform	Iop.h	871	
+IopInfo	IopInfo.h	40	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1IopInfo.html
+IopInfoOwner	Iop.h	42	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1IopInfoOwner.html
+Knob	Knob.h	135	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Knob.html
+Knob::HandleContext	Knob.h	1039	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Knob_1_1HandleContext.html
+Knob::Indent	Knob.h	2011	
+Knob::NotificationCallbackFunctor	Knob.h	701	
+Knob::Script_List	Knob.h	1855	
+Knob::VisibilityCallbackFunctor	Knob.h	714	
+KnobChangeGroup	Knob.h	2095	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1KnobChangeGroup.html
+KnobChangeGroup::Listener	Knob.h	2105	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1KnobChangeGroup_1_1Listener.html
+KnobChangedObserverI	KnobChangedObserverI.h	14	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1KnobChangedObserverI.html
+KnobStoreContext	Knobs.h	52	
+KnobUndoGroup	Knob.h	2120	
+Knob_Closure	Knobs.h	70	
+LUT	LUT.h	45	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LUT.html
+LayerI	LayerI.h	17	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LayerI.html
+License	Description.h	65	
+LightContext	LightContext.h	28	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LightContext.html
+LightOp	LightOp.h	31	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LightOp.html
+LightSceneOp	LightSceneOp.h	27	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LightSceneOp.html
+LightSceneOp::LightProvider	LightSceneOp.h	49	
+LightTokensDef	SlrLightShader.h	20	
+Linear	LUT.h	432	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Linear.html
+LinkKnobI	LinkKnobI.h	15	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LinkKnobI.html
+LinkableI	LinkableI.h	51	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LinkableI.html
+LinkableKnobInfo	LinkableI.h	25	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LinkableKnobInfo.html
+List_KnobI	List_KnobI.h	15	
+List_KnobI::Column	List_KnobI.h	36	
+Lock	Thread.h	55	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Lock.html
+LookAt	LookAt.h	25	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LookAt.html
+LookupCurves	LookupCurves.h	82	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1LookupCurves.html
+LookupCurves::SKey	LookupCurves.h	87	
+LookupCurves_KnobI	LookupCurves.h	194	
+MBParticleSpriteGenerator	ParticlesSprite.h	214	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MBParticleSpriteGenerator.html
+MBSceneSpriteGenerator	ParticlesSprite.h	170	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MBSceneSpriteGenerator.html
+MaskKnobs	GeomOpKnobs.h	378	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MaskKnobs.html
+MaskKnobs::Binding	GeomOpKnobs.h	381	
+Material	Material.h	39	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Material.html
+MaterialBindingOpI	GeomOpMixIns.h	95	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MaterialBindingOpI.html
+MaterialBindingOpI::SubEngine	GeomOpMixIns.h	117	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MaterialBindingOpI_1_1SubEngine.html
+MaterialOpI	MaterialOpI.h	36	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MaterialOpI.html
+MaterialOpI::MaterialContext	MaterialOpI.h	65	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MaterialOpI_1_1MaterialContext.html
+Matrix3	Matrix3.h	30	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Matrix3.html
+Matrix4	Matrix4.h	47	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Matrix4.html
+MatrixArray	MatrixArray.h	96	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MatrixArray.html
+MatrixArray::MatrixEntry	MatrixArray.h	99	
+MemHolderFactory	MemHolderFactory.h	15	
+MemRegistrant	MemRegistrant.h	23	
+Memory	Memory.h	95	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Memory.html
+Memory::MemoryInfo	Memory.h	109	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Memory_1_1MemoryInfo.html
+MemoryBuffer	MemoryBuffer.h	24	
+MemoryBufferGuard	MemoryBuffer.h	129	
+MemoryHolder	MemoryHolder.h	20	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MemoryHolder.html
+Menu	Menu.h	23	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Menu.html
+MenuItemData	MenuItemData.h	14	
+Mesh	Mesh.h	37	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Mesh.html
+MeshKnobs	GeomOpKnobs.h	135	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MeshKnobs.html
+MeshKnobs::Binding	GeomOpKnobs.h	164	
+MeshKnobs::KnobParams	GeomOpKnobs.h	144	
+MeshPrimFilterGeomEngineI	GeomOpMixIns.h	162	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MeshPrimFilterGeomEngineI.html
+MetaKeyFrameDelegate	MetaKeyFrameKnobI.h	17	
+MetaKeyFrameOptions	MetaKeyFrameKnobI.h	39	
+MetaKeyFrame_KnobI	MetaKeyFrameKnobI.h	61	
+ModifyGeo	ModifyGeo.h	27	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ModifyGeo.html
+ModifyGeomOp	ModifyGeomOp.h	26	
+ModifyGeomOp::ModifyEngine	ModifyGeomOp.h	33	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ModifyGeomOp_1_1ModifyEngine.html
+ModifyPathsGeomOpI	GeomOpMixIns.h	174	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ModifyPathsGeomOpI.html
+ModifyPathsGeomOpI::SubEngine	GeomOpMixIns.h	186	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ModifyPathsGeomOpI_1_1SubEngine.html
+MultiArray_KnobI	MultiArray_KnobI.h	34	
+MultiArray_KnobI::KnobVisible	MultiArray_KnobI.h	72	
+MultiTileIop	MultiTileIop.h	36	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1MultiTileIop.html
+NoIop	NoIop.h	22	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1NoIop.html
+NodeI	NodeI.h	32	
+NukeWrapper	NukeWrapper.h	41	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1NukeWrapper.html
+NullGeo	NullGeo.h	22	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1NullGeo.html
+NullGeomOp	GeomOp.h	958	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1NullGeomOp.html
+NullGeomOp::NullEngine	GeomOp.h	961	
+Op	Op.h	126	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Op.html
+Op::Description	Op.h	2317	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Op_1_1Description.html
+Op::EventContext	Op.h	484	
+Op::Input	Op.h	149	
+OpGraphLocation	OpState.h	83	
+OpManager	OpManager.h	27	
+OpMessage	OpMessage.h	35	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1OpMessage.html
+OpMessageHandler	OpMessageHandler.h	32	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1OpMessageHandler.html
+OpMessageObserver	OpMessageObserver.h	30	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1OpMessageObserver.html
+OpState	OpState.h	37	
+OpTimer	OpTimer.h	17	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1OpTimer.html
+OpTimer::PerformanceInfo	OpTimer.h	28	
+OpTree	OpTree.h	30	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1OpTree.html
+OpTreeHandler	OpTreeHandler.h	31	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1OpTreeHandler.html
+OrderedMap	OrderedMap.h	31	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1OrderedMap.html
+OutputContext	OutputContext.h	43	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1OutputContext.html
+ParticleBehaviour	ParticleOp.h	498	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ParticleBehaviour.html
+ParticleContext	ParticleOp.h	410	
+ParticleNodeState	ParticleOp.h	329	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ParticleNodeState.html
+ParticleNodeStateFactory	ParticleOp.h	358	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ParticleNodeStateFactory.html
+ParticleOp	ParticleOp.h	442	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ParticleOp.html
+ParticleRender	ParticleRender.h	20	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ParticleRender.html
+ParticleSearchInfo	ParticlesSprite.h	146	
+ParticleSystem	ParticleOp.h	56	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ParticleSystem.html
+ParticleSystem::BounceInfo	ParticleOp.h	74	
+ParticleSystem::Source	ParticleOp.h	61	
+Particles	Particles.h	17	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Particles.html
+ParticlesSprite	ParticlesSprite.h	37	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ParticlesSprite.html
+PathExpression_KnobI	PathExpressionKnobI.h	18	
+PathExpression_KnobI::ExpressionType	PathExpressionKnobI.h	31	
+PathKnobs	GeomOpKnobs.h	302	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PathKnobs.html
+PathKnobs::Binding	GeomOpKnobs.h	305	
+Path_KnobI	PathKnobI.h	15	
+Pixel	Pixel.h	33	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Pixel.html
+PixelIop	PixelIop.h	28	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PixelIop.html
+PlanarI	PlanarI.h	25	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PlanarI.html
+PlanarIop	PlanarIop.h	20	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PlanarIop.html
+PlanarIop::AutoMemoryFreeDisabler	PlanarIop.h	98	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PlanarIop_1_1AutoMemoryFreeDisabler.html
+Plane	Plane.h	21	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Plane.html
+PluginDescription	SceneReaderPlugin.h	61	
+PluginObject	PluginObject.h	25	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PluginObject.html
+PluginObject::Description	PluginObject.h	46	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PluginObject_1_1Description.html
+PluginPython_KnobI	Knob.h	102	
+Point	Point.h	17	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Point.html
+PointBasedPrimFilterGeomEngineI	GeomOpMixIns.h	153	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PointBasedPrimFilterGeomEngineI.html
+PointList	GeoInfo.h	38	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PointList.html
+PolyMesh	PolyMesh.h	16	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PolyMesh.html
+PolyMesh::SubFace	PolyMesh.h	18	
+Polygon	Polygon.h	20	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Polygon.html
+PolygonPrimitive	PolygonPrimitive.h	20	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PolygonPrimitive.html
+PositionVector_KnobI	PositionVector_KnobI.h	16	
+PreValidateContext	Op.h	99	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PreValidateContext.html
+PrimTokensDef	SlrSurfaceShader.h	17	
+Primitive	Primitive.h	58	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Primitive.html
+PrimitiveContext	PrimitiveContext.h	28	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PrimitiveContext.html
+PrimitiveList	GeoInfo.h	70	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PrimitiveList.html
+PrimitiveTestCache	Raycast.h	79	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1PrimitiveTestCache.html
+ProjectionFunc	ProjectionFunc.h	25	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ProjectionFunc.html
+ProjectionFunc::Description	ProjectionFunc.h	89	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ProjectionFunc_1_1Description.html
+ProxyContext	ProxyContext.h	40	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ProxyContext.html
+PtrStridedIterator	PtrStridedIterator.h	12	
+PythonCustomKnobI	PythonCustomKnobI.h	14	
+Quadtree	Quadtree.h	97	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Quadtree.html
+QuadtreeNode	Quadtree.h	73	
+Radio_KnobI	Radio_KnobI.h	16	
+Random	ParticleOp.h	367	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Random.html
+RawGeneralTile	RawGeneralTile.h	18	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RawGeneralTile.html
+RawGeneralTile::LinePointers	RawGeneralTile.h	55	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RawGeneralTile_1_1LinePointers.html
+Ray	Raycast.h	34	
+Read	Read.h	79	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Read.html
+ReadFileKnobOwner	Read.h	30	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ReadFileKnobOwner.html
+ReadGeo	ReadGeo.h	31	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ReadGeo.html
+ReadGuard	Thread.h	427	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ReadGuard.html
+ReadWriteLock	Thread.h	121	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ReadWriteLock.html
+Reader	Reader.h	66	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Reader.html
+Reader::Description	Reader.h	408	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Reader_1_1Description.html
+ReaderDescription	ReaderDescription.h	13	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ReaderDescription.html
+ReaderFormat	Reader.h	24	
+RecursiveLock	Thread.h	188	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RecursiveLock.html
+RefCountedFloatBuffer	RefCountedFloatBuffer.h	21	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RefCountedFloatBuffer.html
+RefCountedObject	RefCountedObject.h	14	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RefCountedObject.html
+RegularGrid	Raycast.h	263	
+Render	Render.h	51	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Render.html
+Render::Span	Render.h	61	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Render_1_1Span.html
+RenderScene	RenderScene.h	18	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RenderScene.html
+RequestData	RequestData.h	14	
+RequestOutput	RequestOutput.h	13	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RequestOutput.html
+ResizableArrayKnobI	ResizableArrayKnobI.h	16	
+Ripple_KnobI	RippleKnobI.h	39	
+Ripple_KnobInfo	RippleKnobI.h	22	
+Row	Row.h	60	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Row.html
+Row::ReadablePtr	Row.h	296	
+Row::WritablePtr	Row.h	221	
+RowCacheTile	RowCacheTile.h	37	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1RowCacheTile.html
+STL	STLAllocator.h	180	
+SampleInfo	SlrShadingContext.h	80	
+SamplePosition	Sampler.h	35	
+Sampler	Sampler.h	62	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Sampler.html
+Scene	Scene.h	65	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Scene.html
+SceneGraph_KnobI	SceneGraph_KnobI.h	36	
+SceneItem	SceneItem.h	12	
+SceneOpI	SceneOpI.h	311	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SceneOpI.html
+SceneOpI::AxisValsProvider	SceneOpI.h	344	
+SceneOpI::Description	SceneOpI.h	321	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SceneOpI_1_1Description.html
+SceneOpNodeI	SceneOpI.h	130	
+SceneOpNodeI::ConfigParams	SceneOpI.h	134	
+SceneOpNodeI::SceneData	SceneOpI.h	150	
+SceneOpNodeI::SceneOpKnobs	SceneOpI.h	171	
+SceneOpNodeI::SharedData	SceneOpI.h	161	
+SceneReader	SceneReader.h	21	
+SceneReaderPlugin	SceneReaderPlugin.h	18	
+SceneView_KnobI	SceneView_KnobI.h	32	
+ScriptKnobI	ScriptKnobI.h	11	
+SelectionFilters	ViewerContext.h	399	
+ShaderOp	ShaderOp.h	43	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ShaderOp.html
+ShadingLayerReq	SlrShadingContext.h	117	
+ShapeKnob	ShapeKnob.h	37	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ShapeKnob.html
+ShutterControls	Shutter.h	17	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ShutterControls.html
+SignalLock	Thread.h	83	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SignalLock.html
+SlrAdHocRay	SlrRayContext.h	145	
+SlrAovChannelMap	SlrAovLayer.h	82	
+SlrAovChannelMap::AovMapping	SlrAovLayer.h	84	
+SlrAovLayer	SlrAovLayer.h	22	
+SlrAovLayerIterator	SlrAovLayer.h	117	
+SlrBlendingSurfaceShader	SlrSurfaceShader.h	402	
+SlrCoShader	SlrCoShader.h	27	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SlrCoShader.html
+SlrEngineContext	SlrEngineContext.h	149	
+SlrFilterOp	SlrFilter.h	64	
+SlrGeometryShader	SlrSurfaceShader.h	503	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SlrGeometryShader.html
+SlrIntegrator	SlrIntegrator.h	345	
+SlrIntegrator::Description	SlrIntegrator.h	451	
+SlrIntegratorContext	SlrIntegrator.h	34	
+SlrLightInfo	SlrPrimInfo.h	68	
+SlrLightMaterial	SlrLightShader.h	372	
+SlrLightShader	SlrLightShader.h	44	
+SlrLightShader::BaseInputParams	SlrLightShader.h	49	
+SlrPrimEnabledLighting	SlrPrimInfo.h	101	
+SlrPrimInfo	SlrPrimInfo.h	25	
+SlrRayBundle	SlrRayContext.h	223	
+SlrRayContext	SlrRayContext.h	34	
+SlrRenderOp	SlrEngineContext.h	45	
+SlrRenderOptionsKnobs	GeomOpKnobs.h	427	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SlrRenderOptionsKnobs.html
+SlrRenderOptionsKnobs::Binding	GeomOpKnobs.h	437	
+SlrSampleFilterContext	SlrFilter.h	27	
+SlrShader	SlrShader.h	84	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SlrShader.html
+SlrShader::Color4Binding	SlrShader.h	482	
+SlrShader::Connection	SlrShader.h	226	
+SlrShader::Description	SlrShader.h	593	
+SlrShader::DoubleBinding	SlrShader.h	454	
+SlrShader::Dual2Vec2fBinding	SlrShader.h	534	
+SlrShader::Dual2Vec3fBinding	SlrShader.h	547	
+SlrShader::Dual2Vec4fBinding	SlrShader.h	560	
+SlrShader::Dual2dBinding	SlrShader.h	521	
+SlrShader::Dual2fBinding	SlrShader.h	508	
+SlrShader::FloatBinding	SlrShader.h	433	
+SlrShader::InputBinding	SlrShader.h	317	
+SlrShader::InputKnob	SlrShader.h	147	
+SlrShader::IntBinding	SlrShader.h	418	
+SlrShader::Mat4dBinding	SlrShader.h	469	
+SlrShader::OutputPort	SlrShader.h	177	
+SlrShader::PixelBinding	SlrShader.h	354	
+SlrShader::Vec2fBinding	SlrShader.h	401	
+SlrShader::Vec3fBinding	SlrShader.h	385	
+SlrShader::Vec4fBinding	SlrShader.h	370	
+SlrShaderGroup	SlrShader.h	1149	
+SlrShaderThreadData	SlrShader.h	60	
+SlrShadingContext	SlrShadingContext.h	267	
+SlrSurfaceMaterial	SlrSurfaceShader.h	568	
+SlrSurfaceShader	SlrSurfaceShader.h	32	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SlrSurfaceShader.html
+SlrThreadContext	SlrEngineContext.h	125	
+SmallBlockDefinition	SmallBlockDefinition.h	25	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SmallBlockDefinition.html
+SnapKnobs	KnobMixIns.h	16	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SnapKnobs.html
+SolidShader	Material.h	108	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SolidShader.html
+SourceGeo	SourceGeo.h	19	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SourceGeo.html
+SourceGeomOp	SourceGeomOp.h	27	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SourceGeomOp.html
+SourceGeomOp::SourceEngine	SourceGeomOp.h	47	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SourceGeomOp_1_1SourceEngine.html
+SpinGuard	Thread.h	508	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SpinGuard.html
+Sprite	ParticlesSprite.h	26	
+SpriteGenerator	ParticlesSprite.h	111	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SpriteGenerator.html
+StringKnobI	StringKnobI.h	16	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1StringKnobI.html
+StxBundle	SlrShadingContext.h	936	
+StxLayeringStack	SlrShadingContext.h	1034	
+StxLayeringStackBundle	SlrShadingContext.h	1096	
+SubdivisionContext	SubdivisionContext.h	47	
+SurfaceShaderOp	ShaderOp.h	230	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1SurfaceShaderOp.html
+SurfaceShaderOp::VisibilityTraits	ShaderOp.h	242	
+TQuaternion	Quaternion.h	39	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TQuaternion.html
+Table_KnobI	TableKnobI.h	17	
+Table_KnobI::MenuItem	TableKnobI.h	212	
+Text_KnobI	TextKnobI.h	17	
+TextureFilter	TextureFilter.h	17	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TextureFilter.html
+Thread	Thread.h	541	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Thread.html
+Thread::RunningThreadsInfo	Thread.h	553	
+Thread::ThreadInfo	Thread.h	546	
+TimelineRead	TimelineRead.h	23	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TimelineRead.html
+ToBuffer	ToBuffer.h	24	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ToBuffer.html
+Transform	Transform.h	33	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Transform.html
+Transform2d_KnobI	Transform2dKnobI.h	16	
+TransformGeo	TransformGeo.h	25	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TransformGeo.html
+TransformGeomOpI	GeomOpMixIns.h	20	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TransformGeomOpI.html
+TransformGeomOpI::SubEngine	GeomOpMixIns.h	39	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TransformGeomOpI_1_1SubEngine.html
+TransformJack_ClientI	TransformJackKnobI.h	24	
+TransformJack_KnobI	TransformJackKnobI.h	86	
+TransformKnobs	GeomOpKnobs.h	226	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TransformKnobs.html
+TransformKnobs::Binding	GeomOpKnobs.h	255	
+TransformKnobs::KnobParams	GeomOpKnobs.h	236	
+TransformReceiverI	TransformReceiverI.h	17	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TransformReceiverI.html
+Triangle	Triangle.h	16	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Triangle.html
+TryLockGuard	Thread.h	516	
+TryWriteGuard	Thread.h	471	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1TryWriteGuard.html
+USDSceneGraph_KnobI	USDSceneGraph_KnobI.h	29	
+UpRez	UpRez.h	21	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1UpRez.html
+VArray	VertexContext.h	38	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1VArray.html
+VConvolve	VConvolve.h	36	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1VConvolve.html
+ValueProvidableI	ValueProvider.h	86	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ValueProvidableI.html
+ValueProvider	ValueProvider.h	27	
+ValueStuffI	ValueStuffI.h	19	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ValueStuffI.html
+Vec2KnobData	Knobs.h	341	
+Vec3KnobData	Knobs.h	345	
+Vec4KnobData	Knobs.h	350	
+Vector2	Vector2.h	30	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Vector2.html
+Vector3	Vector3.h	27	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Vector3.html
+Vector4	Vector4.h	25	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Vector4.html
+Version	Version.h	63	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Version.html
+VertexContext	VertexContext.h	131	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1VertexContext.html
+ViewFrustum	ViewFrustum.h	45	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ViewFrustum.html
+ViewSet	ViewSet.h	21	
+ViewerCache	ViewerCache.h	22	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ViewerCache.html
+ViewerCache::LineEnds	ViewerCache.h	77	
+ViewerContext	ViewerContext.h	420	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1ViewerContext.html
+ViewerContext::ViewerWindowFormatContext	ViewerContext.h	550	
+WidgetContext	WidgetContext.h	25	
+WireframeShader	Material.h	150	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1WireframeShader.html
+WorldMatrixProvider	AxisOp.h	77	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1WorldMatrixProvider.html
+WorldPointProvider	AxisOp.h	61	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1WorldPointProvider.html
+Write	Write.h	33	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Write.html
+WriteGeo	WriteGeo.h	28	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1WriteGeo.html
+WriteGuard	Thread.h	449	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1WriteGuard.html
+Writer	Writer.h	32	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Writer.html
+Writer::Description	Writer.h	319	https://learn.foundry.com/nuke/developers/16.1/ndkreference/Plugins/classDD_1_1Image_1_1Writer_1_1Description.html
