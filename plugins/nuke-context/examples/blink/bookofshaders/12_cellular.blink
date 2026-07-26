@@ -1,0 +1,37 @@
+// 12_cellular — nuke-agent example (original code).
+// category: bookofshaders/generative | teaches: Voronoi -- nearest random feature point
+// port of the technique in The Book of Shaders ch.12 (original Blink; not their code).
+// verified: live-rendered in Nuke 17.0v3
+kernel BoSCellular : public ImageComputationKernel<ePixelWise>
+{
+  Image<eRead, eAccessPoint> src;
+  Image<eWrite, eAccessPoint> dst;
+local:
+  float2 res;
+
+  float fract(float x) { return x - floor(x); }
+
+  float2 random2(float2 st) {
+    float2 s = float2(dot(st, float2(127.1f, 311.7f)),
+                      dot(st, float2(269.5f, 183.3f)));
+    return float2(fract(sin(s.x) * 43758.5453f), fract(sin(s.y) * 43758.5453f));
+  }
+
+  void init() { res = float2(float(dst.bounds.width()), float(dst.bounds.height())); }
+
+  void process(int2 pos) {
+    float2 st = float2(float(pos.x), float(pos.y)) / res * 5.0f;
+    float2 i_st = floor(st);
+    float2 f_st = st - i_st;
+    float m_dist = 1.5f;
+    for (int y = -1; y <= 1; ++y) {
+      for (int x = -1; x <= 1; ++x) {
+        float2 neighbor = float2(float(x), float(y));
+        float2 point = random2(i_st + neighbor);
+        float2 diff = neighbor + point - f_st;
+        m_dist = min(m_dist, length(diff));
+      }
+    }
+    dst() = float4(m_dist, m_dist, m_dist, 1.0f);
+  }
+};

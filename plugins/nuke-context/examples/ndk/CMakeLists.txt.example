@@ -1,0 +1,61 @@
+# Copy into your project root, replace @PROJECT@ and @NUKE_CMAKE_DIR@, and build.
+cmake_minimum_required(VERSION 3.20)
+project(@PROJECT@ CXX)
+
+# CMake's generators reserve some target names. Hitting one produces an error
+# deep inside Foundry's NukeConfig.cmake that says nothing about the cause, so
+# fail early with something actionable instead.
+set(_NV_RESERVED all clean help install test package edit_cache rebuild_cache
+                 list_install_components)
+if("${PROJECT_NAME}" IN_LIST _NV_RESERVED)
+  message(FATAL_ERROR
+    "Project name '${PROJECT_NAME}' is a reserved CMake target name.\n"
+    "Rename the project (the directory can keep its name) -- e.g. "
+    "'${PROJECT_NAME}Tool' -- and regenerate with /nuke-agent:setup.")
+endif()
+
+enable_testing()
+
+# Foundry ships its own CMake package with Nuke. add_nuke_plugin() already
+# handles include dirs, cxx_std_17, the macOS -undefined dynamic_lookup link
+# option, MODULE library type, the empty lib prefix, and the .dylib suffix /
+# NOMINMAX platform bits. Do not restate any of that here.
+find_package(Nuke REQUIRED PATHS "@NUKE_CMAKE_DIR@" NO_DEFAULT_PATH)
+
+# --- pure core -------------------------------------------------------------
+# No DDImage dependency, so it is unit-testable in milliseconds without Nuke.
+file(GLOB CORE_SOURCES CONFIGURE_DEPENDS "${CMAKE_SOURCE_DIR}/src/core/*.cpp")
+if(CORE_SOURCES)
+  add_library(@PROJECT@_core STATIC ${CORE_SOURCES})
+  target_include_directories(@PROJECT@_core PUBLIC "${CMAKE_SOURCE_DIR}/src")
+  set_target_properties(@PROJECT@_core PROPERTIES POSITION_INDEPENDENT_CODE ON)
+endif()
+
+# --- unit tests ------------------------------------------------------------
+# One executable per tests/unit/*.cpp, registered with ctest. Plain asserts,
+# no test framework to install — a compositor should not have to vendor gtest
+# before writing a first test.
+file(GLOB UNIT_TESTS CONFIGURE_DEPENDS "${CMAKE_SOURCE_DIR}/tests/unit/*.cpp")
+foreach(test_src ${UNIT_TESTS})
+  get_filename_component(test_name ${test_src} NAME_WE)
+  add_executable(${test_name} ${test_src})
+  target_include_directories(${test_name} PRIVATE "${CMAKE_SOURCE_DIR}/src")
+  if(CORE_SOURCES)
+    target_link_libraries(${test_name} PRIVATE @PROJECT@_core)
+  endif()
+  add_test(NAME ${test_name} COMMAND ${test_name})
+endforeach()
+
+# --- the Nuke plugin -------------------------------------------------------
+file(GLOB OP_SOURCES CONFIGURE_DEPENDS "${CMAKE_SOURCE_DIR}/src/ops/*.cpp")
+if(NOT OP_SOURCES)
+  message(FATAL_ERROR
+    "No sources in src/ops/. /nuke-agent:setup scaffolds a starter Op — if you "
+    "removed it, add your own .cpp there before building.")
+endif()
+
+add_nuke_plugin(@PROJECT@ ${OP_SOURCES})
+target_include_directories(@PROJECT@ PRIVATE "${CMAKE_SOURCE_DIR}/src")
+if(CORE_SOURCES)
+  target_link_libraries(@PROJECT@ PRIVATE @PROJECT@_core)
+endif()

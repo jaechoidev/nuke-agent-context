@@ -1,0 +1,27 @@
+// HorizontalMax — nuke-agent example (original code).
+// category: 1D ranged | teaches: eAccessRanged1D, setRange/setAxis in init()
+// verified: live-compiled in Nuke 17.0v3 (nuke-mcp); CI runs the static api-check
+kernel HorizontalMaxKernel : public ImageComputationKernel<eComponentWise>
+{
+  Image<eRead, eAccessRanged1D, eEdgeClamped> src;
+  Image<eWrite, eAccessPoint> dst;
+
+param:
+  int radius;
+
+  void define() {
+    defineParam(radius, "Radius", 3);
+  }
+
+  void init() {
+    src.setRange(-radius, radius);   // declare the 1D window we will read
+    src.setAxis(eX);                 // horizontal
+  }
+
+  void process() {
+    float m = src(-radius);
+    for (int i = -radius + 1; i <= radius; ++i)
+      m = max(m, src(i));
+    dst() = m;
+  }
+};

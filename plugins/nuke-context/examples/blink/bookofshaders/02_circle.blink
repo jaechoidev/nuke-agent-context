@@ -1,0 +1,20 @@
+// 02_circle — nuke-agent example (original code).
+// category: bookofshaders/shapes | teaches: distance field + a hand-rolled smooth edge
+// port of the technique in The Book of Shaders ch.07 (original Blink; not their code).
+// NOTE: Blink has no smoothstep -- the soft edge is built from clamp, which is real.
+// verified: live-rendered in Nuke 17.0v3
+kernel BoSCircle : public ImageComputationKernel<ePixelWise>
+{
+  Image<eRead, eAccessPoint> src;
+  Image<eWrite, eAccessPoint> dst;
+local:
+  float2 res;
+  void init() { res = float2(float(dst.bounds.width()), float(dst.bounds.height())); }
+  void process(int2 pos) {
+    float2 st = float2(float(pos.x), float(pos.y)) / res;
+    float d = length(st - float2(0.5f, 0.5f));
+    float t = clamp((0.30f - d) / 0.01f, 0.0f, 1.0f);
+    float c = t * t * (3.0f - 2.0f * t);     // smooth edge, no smoothstep builtin
+    dst() = float4(c, c, c, 1.0f);
+  }
+};

@@ -1,0 +1,21 @@
+// 01_gradient — nuke-agent example (original code).
+// category: bookofshaders/shaping | teaches: normalized st coords -> value ramp
+// port of the technique in The Book of Shaders ch.05 (original Blink; not their code)
+// verified: live-compiled + rendered in Nuke 17.0v3
+kernel BoSGradient : public ImageComputationKernel<ePixelWise>
+{
+  Image<eRead, eAccessPoint> src;
+  Image<eWrite, eAccessPoint> dst;
+
+local:
+  float2 res;
+
+  void init() {
+    res = float2(float(dst.bounds.width()), float(dst.bounds.height()));
+  }
+
+  void process(int2 pos) {
+    float2 st = float2(float(pos.x), float(pos.y)) / res;   // 0..1 across the frame
+    dst() = float4(st.x, st.x, st.x, 1.0f);
+  }
+};

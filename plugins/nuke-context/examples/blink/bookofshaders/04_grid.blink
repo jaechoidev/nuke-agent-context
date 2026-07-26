@@ -1,0 +1,19 @@
+// 04_grid — nuke-agent example (original code).
+// category: bookofshaders/patterns | teaches: fract (via floor) of scaled coords -> grid
+// port of the technique in The Book of Shaders ch.09 (original Blink; not their code).
+// NOTE: Blink has neither fract nor step -- fract is x-floor(x), step is a compare.
+// verified: live-rendered in Nuke 17.0v3
+kernel BoSGrid : public ImageComputationKernel<ePixelWise>
+{
+  Image<eRead, eAccessPoint> src;
+  Image<eWrite, eAccessPoint> dst;
+local:
+  float2 res;
+  void init() { res = float2(float(dst.bounds.width()), float(dst.bounds.height())); }
+  void process(int2 pos) {
+    float2 st = float2(float(pos.x), float(pos.y)) / res * 5.0f;
+    float2 f = st - floor(st);
+    float line = (f.x > 0.9f || f.y > 0.9f) ? 1.0f : 0.0f;
+    dst() = float4(line, line, line, 1.0f);
+  }
+};

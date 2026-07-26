@@ -1,0 +1,27 @@
+// 10_random — nuke-agent example (original code).
+// category: bookofshaders/generative | teaches: a hash-based pseudo-random per cell
+// port of the technique in The Book of Shaders ch.10 (original Blink; not their code).
+// NOTE: Blink has no fract -- fract(x) is x - floor(x). rand is a helper method.
+// verified: live-rendered in Nuke 17.0v3
+kernel BoSRandom : public ImageComputationKernel<ePixelWise>
+{
+  Image<eRead, eAccessPoint> src;
+  Image<eWrite, eAccessPoint> dst;
+local:
+  float2 res;
+
+  float fract(float x) { return x - floor(x); }
+
+  float rand(float2 st) {
+    return fract(sin(dot(st, float2(12.9898f, 78.233f))) * 43758.5453f);
+  }
+
+  void init() { res = float2(float(dst.bounds.width()), float(dst.bounds.height())); }
+
+  void process(int2 pos) {
+    float2 st = float2(float(pos.x), float(pos.y)) / res * 10.0f;
+    float2 ipos = floor(st);            // integer cell -> blocky random grid
+    float r = rand(ipos);
+    dst() = float4(r, r, r, 1.0f);
+  }
+};

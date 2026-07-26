@@ -1,0 +1,27 @@
+// Dilate2D — nuke-agent example (original code).
+// category: 2D ranged | teaches: eAccessRanged2D, a 2D neighbourhood window
+// verified: live-compiled in Nuke 17.0v3 (nuke-mcp)
+kernel Dilate2DKernel : public ImageComputationKernel<eComponentWise>
+{
+  Image<eRead, eAccessRanged2D, eEdgeClamped> src;
+  Image<eWrite, eAccessPoint> dst;
+
+param:
+  int radius;
+
+  void define() {
+    defineParam(radius, "Radius", 2);
+  }
+
+  void init() {
+    src.setRange(-radius, -radius, radius, radius);
+  }
+
+  void process() {
+    float m = 0.0f;
+    for (int y = -radius; y <= radius; ++y)
+      for (int x = -radius; x <= radius; ++x)
+        m = max(m, src(x, y));
+    dst() = m;
+  }
+};

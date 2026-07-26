@@ -1,0 +1,26 @@
+// Exposure — nuke-agent example (original code).
+// category: per-pixel | teaches: the simplest ePixelWise kernel, param + process
+// verified: live-compiled in Nuke 17.0v3 (nuke-mcp); CI runs the static api-check
+kernel ExposureKernel : public ImageComputationKernel<ePixelWise>
+{
+  Image<eRead, eAccessPoint> src;
+  Image<eWrite, eAccessPoint> dst;
+
+param:
+  float stops;
+
+local:
+  float gain;
+
+  void define() {
+    defineParam(stops, "Stops", 0.0f);
+  }
+
+  void init() {
+    gain = pow(2.0f, stops);   // computed once, not per pixel
+  }
+
+  void process() {
+    dst() = src() * gain;
+  }
+};
