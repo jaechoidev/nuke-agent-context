@@ -16,7 +16,7 @@ _NUKE_DIR_RE = re.compile(r"Nuke\d+\.\d+v\d+$")
 
 @pytest.fixture(scope="session")
 def repo_root():
-    """Repository root — the directory holding .claude-plugin/marketplace.json."""
+    """Repository root — the directory holding plugins/ and tools/."""
     return REPO
 
 
@@ -30,9 +30,8 @@ def tools_root():
     return REPO / "tools"
 
 
-@pytest.fixture(scope="session")
-def marketplace():
-    return json.loads((REPO / ".claude-plugin" / "marketplace.json").read_text())
+# (the `marketplace` fixture is gone with the marketplace manifest — the
+# archived repo is deliberately not installable)
 
 
 def _load_nuke_detect():

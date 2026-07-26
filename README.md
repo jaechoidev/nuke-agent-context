@@ -15,8 +15,10 @@
 > The repo stays up as a record of the approach. Still potentially useful:
 > the `tools/` extractors (version-pinned API indexes from a local Nuke
 > install), the refs/verification-ladder design, and the eval methodology.
-> The plugin is unmaintained; it still installs if you want to study it, but
-> the measured advice is: give your agent a way to compile and run instead.
+> The marketplace manifest has been removed so this is **not installable as a
+> plugin** anymore; to study it, clone the repo and load it with
+> `claude --plugin-dir <clone>/plugins/nuke-context`. The measured advice is:
+> give your agent a way to compile and run instead.
 
 A Claude Code plugin (`nuke-context`) that makes AI agents good at Nuke tool
 development — Python, BlinkScript, and the NDK (C++).
@@ -35,7 +37,11 @@ the compile rate **2.1×** (38% → 79%) and cut invented API references by
 **70%** on a Sonnet-class model of the time. That harness lives in `evals/`;
 the follow-up study that overturned it is linked in the banner above.
 
-## Install
+## Install (historical — no longer possible)
+
+These were the distribution paths while the plugin was maintained. The
+marketplace manifest has since been removed, so none of them work anymore;
+they are kept to document how a content plugin like this was distributed.
 
 Personal (interactive scope picker — choose **User** for everywhere, or
 **Project**/**Local** to activate only in your Nuke tools repo):
