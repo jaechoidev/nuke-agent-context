@@ -1,0 +1,8 @@
+{
+  "name": "nuke-context",
+  "version": "0.1.0",
+  "description": "Nuke tool development context: grounded API lookup, performance principles, verification, examples.",
+  "author": { "name": "jaechoidev" },
+  "license": "MIT",
+  "keywords": ["nuke", "vfx", "compositing", "ndk", "blinkscript", "python"]
+}

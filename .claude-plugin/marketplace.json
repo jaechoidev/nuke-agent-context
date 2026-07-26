@@ -1,0 +1,15 @@
+{
+  "name": "nuke-agent-context",
+  "owner": { "name": "jaechoidev" },
+  "metadata": {
+    "description": "Version-pinned Nuke API context and practitioner knowledge for AI-assisted tool development."
+  },
+  "plugins": [
+    {
+      "name": "nuke-context",
+      "source": "./plugins/nuke-context",
+      "description": "Nuke tool development context: grounded Python/NDK/BlinkScript API lookup, performance principles, verification ladder, and working examples.",
+      "version": "0.1.0"
+    }
+  ]
+}
