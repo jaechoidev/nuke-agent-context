@@ -102,3 +102,21 @@ def test_model_skills_point_to_field_guide_with_verify_rule(plugin_root, skill):
     assert "references/" in body
     assert "verif" in body.lower()
     assert "what is true" in body      # the guide-routes/official-decides framing
+
+
+def test_performance_skill_covers_core_principles(plugin_root):
+    _, body = frontmatter(plugin_root / "skills" / "nuke-performance" / "SKILL.md")
+    for needle in ["_request", "engine", "bbox", "hash", "devguide_map",
+                   "eAccessPoint", "thread"]:
+        assert needle in body, f"missing principle marker: {needle}"
+
+
+def test_performance_skill_routes_not_duplicates(plugin_root):
+    text = (plugin_root / "skills" / "nuke-performance" / "SKILL.md").read_text()
+    assert len(text) < 12_000, "stays a routing skill, not a textbook"
+    assert "devguide_map" in text     # depth comes from routed guide anchors
+
+
+def test_performance_skill_requires_measurement(plugin_root):
+    _, body = frontmatter(plugin_root / "skills" / "nuke-performance" / "SKILL.md")
+    assert "measure" in body.lower()  # perf claims verified, not believed
