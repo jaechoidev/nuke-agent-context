@@ -153,7 +153,8 @@ def main() -> int:
     with_dir.mkdir(parents=True)
     without_dir.mkdir(parents=True)
 
-    cases = sorted(CASES.glob("*.md"))
+    # The grader is a C++ compile oracle; only the NDK cases apply.
+    cases = sorted((CASES / "ndk").glob("*.md"))
     if args.case:
         cases = [c for c in cases if args.case in c.name]
     if not cases:
